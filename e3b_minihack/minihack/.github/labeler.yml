@@ -1,0 +1,6 @@
+docs: "docs/*"
+docker: "docker/*"
+envs: "minihack/envs/*"
+agent: "minihack/agent/*"
+tests: "minihack/tests/*"
+core: "minihack/*.py"
