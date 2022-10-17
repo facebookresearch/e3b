@@ -1,0 +1,37 @@
+ENVIRONMENT:
+  MAX_EPISODE_STEPS: 500
+SIMULATOR:
+  AGENT_0:
+    SENSORS: ['RGB_SENSOR']
+  HABITAT_SIM_V0:
+    GPU_DEVICE_ID: 0
+  RGB_SENSOR:
+    WIDTH: 256
+    HEIGHT: 256
+  DEPTH_SENSOR:
+    WIDTH: 256
+    HEIGHT: 256
+TASK:
+  TYPE: Nav-v0
+  SUCCESS_DISTANCE: 0.2
+
+#  SENSORS: ['POINTGOAL_WITH_GPS_COMPASS_SENSOR']
+  SENSORS: ['COMPASS_SENSOR', 'GPS_SENSOR']
+
+#  POSSIBLE_ACTIONS: ["MOVE_FORWARD", "TURN_LEFT", "TURN_RIGHT"]
+
+#  SENSORS: []
+  POINTGOAL_WITH_GPS_COMPASS_SENSOR:
+    GOAL_FORMAT: "POLAR"
+    DIMENSIONALITY: 2
+  GOAL_SENSOR_UUID: pointgoal_with_gps_compass
+
+  MEASUREMENTS: ['DISTANCE_TO_GOAL', 'SUCCESS', 'SPL']
+  SUCCESS:
+    SUCCESS_DISTANCE: 0.2
+DATASET:
+  TYPE: PointNav-v1
+  SPLIT: train
+  DATA_PATH: /private/home/mikaelhenaff/projects/genexp/habitat-challenge/habitat-lab/data/datasets/pointnav/hm3d-karmesh-fixed/v1/{split}/{split}.json.gz
+#  DATA_PATH: /private/home/mikaelhenaff/projects/genexp/habitat-challenge/habitat-lab/data/datasets/pointnav_hm3d_v1/{split}/{split}.json.gz
+#  DATA_PATH: data/datasets/pointnav/hm3d/v1/{split}/{split}.json.gz
