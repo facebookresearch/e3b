@@ -70,7 +70,7 @@ parser.add_argument('--scale_fac', default=0.1, type=float,
 
 
 # Loss settings.
-parser.add_argument('--entropy_cost', default=0.0005, type=float,
+parser.add_argument('--entropy_cost', default=0.005, type=float,
                     help='Entropy cost/multiplier.')
 parser.add_argument('--baseline_cost', default=0.5, type=float,
                     help='Baseline cost/multiplier.')
