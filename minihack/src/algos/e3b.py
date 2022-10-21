@@ -40,12 +40,9 @@ MinigridMLPTargetEmbeddingNet = models.MinigridMLPTargetEmbeddingNet
 def learn(actor_model,
           model,
           inverse_dynamics_model,
-          actor_encoder,
-          encoder,
           actor_elliptical_encoder, 
           elliptical_encoder, 
           batch,
-          icm_batch,
           initial_agent_state, 
           optimizer,
           elliptical_encoder_optimizer,
@@ -64,7 +61,7 @@ def learn(actor_model,
         # ICM loss
         elliptical_encoder.train()
         inverse_dynamics_model.train()
-        icm_state_emb_all, _ = elliptical_encoder(icm_batch, tuple())
+        icm_state_emb_all, _ = elliptical_encoder(batch, tuple())
         icm_state_emb = icm_state_emb_all[:-1]
         icm_next_state_emb = icm_state_emb_all[1:]
         pred_actions = inverse_dynamics_model(icm_state_emb, icm_next_state_emb)
@@ -161,7 +158,6 @@ def learn(actor_model,
         inverse_dynamics_optimizer.step()        
 
         actor_model.load_state_dict(model.state_dict())
-        actor_encoder.load_state_dict(encoder.state_dict())
         actor_elliptical_encoder.load_state_dict(elliptical_encoder.state_dict())
         return stats, None
 
@@ -212,14 +208,12 @@ def train(flags):
         
     if 'MiniHack' in flags.env:
         model = models.NetHackPolicyNet(env.observation_space, env.action_space.n, flags.use_lstm)
-        encoder = NetHackStateEmbeddingNet(env.observation_space, False) # do not use LSTM for encoders
-        elliptical_encoder = NetHackStateEmbeddingNet(env.observation_space, False)
+        elliptical_encoder = NetHackStateEmbeddingNet(env.observation_space, False) # do not use LSTM for encoder
         inverse_dynamics_model = MinigridInverseDynamicsNet(env.action_space.n, emb_size=1024)\
             .to(device=flags.device) 
 
     elif 'Vizdoom' in flags.env:
         model = models.MarioDoomPolicyNet(env.observation_space.shape, env.action_space.n)
-        encoder = models.MarioDoomStateEmbeddingNet(env.observation_space.shape)
         elliptical_encoder = models.MarioDoomStateEmbeddingNet(env.observation_space.shape)
         inverse_dynamics_model = models.MarioDoomInverseDynamicsNet(env.action_space.n)\
             .to(device=flags.device) 
@@ -231,9 +225,7 @@ def train(flags):
 
     buffers = create_buffers(env.observation_space, model.num_actions, flags)
     model.share_memory()
-    encoder.share_memory()
-    if elliptical_encoder is not None:
-        elliptical_encoder.share_memory()
+    elliptical_encoder.share_memory()
     
     initial_agent_state_buffers = []
     for _ in range(flags.num_buffers):
@@ -259,14 +251,11 @@ def train(flags):
 
     if 'MiniHack' in flags.env:
         learner_model = models.NetHackPolicyNet(env.observation_space, env.action_space.n, flags.use_lstm, hidden_dim=flags.hidden_dim).to(flags.device)
-        learner_encoder = NetHackStateEmbeddingNet(env.observation_space, False, hidden_dim=flags.hidden_dim).to(device=flags.device)
-        learner_encoder.load_state_dict(encoder.state_dict())
         elliptical_learner_encoder = NetHackStateEmbeddingNet(env.observation_space, False, hidden_dim=flags.hidden_dim, p_dropout=flags.dropout).to(flags.device)
         elliptical_learner_encoder.load_state_dict(elliptical_encoder.state_dict())
         
     elif 'Vizdoom' in flags.env:
         learner_model = models.MarioDoomPolicyNet(env.observation_space.shape, env.action_space.n).to(flags.device)
-        learner_encoder = models.MarioDoomStateEmbeddingNet(env.observation_space.shape).to(flags.device)
         elliptical_learner_encoder = models.MarioDoomStateEmbeddingNet(env.observation_space.shape).to(flags.device)
         elliptical_learner_encoder.load_state_dict(elliptical_encoder.state_dict())
 
@@ -313,16 +302,14 @@ def train(flags):
         """Thread target for the learning process."""
         nonlocal frames, stats
         timings = prof.Timings()
-        batches = []
         
         while frames < flags.total_frames:
             timings.reset()
             batch, agent_state = get_batch(free_queue, full_queue, buffers, 
                 initial_agent_state_buffers, flags, timings)
-            icm_batch = batch
             stats, decoder_logits = learn(model, learner_model, inverse_dynamics_model,
-                                          encoder, learner_encoder, elliptical_encoder,
-                                          elliptical_learner_encoder, batch, icm_batch, agent_state, optimizer, 
+                                          elliptical_encoder,
+                                          elliptical_learner_encoder, batch, agent_state, optimizer, 
                                           elliptical_encoder_optimizer, inverse_dynamics_optimizer, scheduler,
                                           flags, frames=frames)
             timings.time('learn')
@@ -353,7 +340,6 @@ def train(flags):
         torch.save({
             'frames': frames,
             'model_state_dict': model.state_dict(),
-            'encoder': encoder.state_dict(),
             'elliptical_encoder_state_dict': elliptical_encoder.state_dict(),
             'inverse_dynamics_model_state_dict': inverse_dynamics_model.state_dict(),
             'optimizer_state_dict': optimizer.state_dict(),
