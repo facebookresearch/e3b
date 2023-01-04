@@ -8,6 +8,8 @@ conda activate e3b
 pip install -r requirements.txt
 ```
 
+Make sure to install MiniHack following the instructions [here](https://github.com/facebookresearch/minihack). 
+
 To train an agent with E3B using the hyperparameters from the paper, run:
 
 ```
