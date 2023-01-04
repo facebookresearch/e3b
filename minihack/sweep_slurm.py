@@ -85,13 +85,13 @@ def write_slurm_script(name, cmd, partition, device=0, ncpu=1):
 
 
 SKILL_TASKS = [
-         'MiniHack-Levitate-Potion-v1',
-         'MiniHack-Levitate-Boots-v1',
-         'MiniHack-Freeze-Horn-v1', 
-         'MiniHack-Freeze-Wand-v1', 
-         'MiniHack-Freeze-Random-v1',
-         'MiniHack-LavaCross-v1', 
-         'MiniHack-WoD-Hard-v1'
+         'MiniHack-Levitate-Potion-Restricted-v0',
+         'MiniHack-Levitate-Boots-Restricted-v0',
+         'MiniHack-Freeze-Horn-Restricted-v0', 
+         'MiniHack-Freeze-Wand-Restricted-v0', 
+         'MiniHack-Freeze-Random-Restricted-v0',
+         'MiniHack-LavaCross-Restricted-v0', 
+         'MiniHack-WoD-Hard-Restricted-v0'
          ] 
 
 NAV_TASKS = [

@@ -8,13 +8,6 @@ conda activate e3b
 pip install -r requirements.txt
 ```
 
-We use a number of additional MiniHack environments, to install these run:
-
-```
-cd minihack
-python setup.py install
-```
-
 To train an agent with E3B using the hyperparameters from the paper, run:
 
 ```
