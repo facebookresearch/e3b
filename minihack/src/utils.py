@@ -35,7 +35,7 @@ from src.core import prof
 from src.env_utils import FrameStack, Environment
 from src import atari_wrappers as atari_wrappers
 
-from gym_minigrid import wrappers as wrappers
+#from gym_minigrid import wrappers as wrappers
 
 
 @contextlib.contextmanager
@@ -194,7 +194,7 @@ def create_buffers(obs_space, num_actions, flags) -> Buffers:
             episode_step=dict(size=size, dtype=torch.int32),
             policy_logits=dict(size=size + (num_actions,), dtype=torch.float32),
             episode_state_count=dict(size=(T + 1, ), dtype=torch.float32),
-            train_state_count=dict(size=(T + 1, ), dtype=torch.float32),
+            global_state_count=dict(size=(T + 1, ), dtype=torch.float32),
             baseline=dict(size=size, dtype=torch.float32),
             last_action=dict(size=size, dtype=torch.int64),
             action=dict(size=size, dtype=torch.int64),
@@ -220,7 +220,7 @@ def create_buffers(obs_space, num_actions, flags) -> Buffers:
             carried_col=dict(size=(T + 1,), dtype=torch.int32),
             partial_obs=dict(size=(T + 1, 7, 7, 3), dtype=torch.uint8),
             episode_state_count=dict(size=(T + 1, ), dtype=torch.float32),
-            train_state_count=dict(size=(T + 1, ), dtype=torch.float32),
+            global_state_count=dict(size=(T + 1, ), dtype=torch.float32),
             partial_state_count=dict(size=(T + 1, ), dtype=torch.float32),
             encoded_state_count=dict(size=(T + 1, ), dtype=torch.float32),
         )
@@ -234,6 +234,38 @@ def create_buffers(obs_space, num_actions, flags) -> Buffers:
 
 
 
+def extract_state_key(env_output, flags):
+    if flags.episodic_bonus_type != 'none':
+        bonus_type = flags.episodic_bonus_type
+    else:
+        bonus_type = flags.global_bonus_type
+
+    if bonus_type == 'counts-obs':
+        # full observation: glyph image + stats + message
+        state_key = tuple(env_output['glyphs'].view(-1).tolist() \
+                          + env_output['blstats'].view(-1).tolist() \
+                          + env_output['message'].view(-1).tolist())
+    elif bonus_type == 'counts-msg':
+        # message only
+        state_key = tuple(env_output['message'].view(-1).tolist())
+    elif bonus_type == 'counts-glyphs':
+        # glyph image only
+        state_key = tuple(env_output['glyphs'].view(-1).tolist())
+    elif bonus_type == 'counts-pos':
+        # (x, y) position extracted from the stats vector
+        state_key = tuple(env_output['blstats'].view(-1).tolist()[:2])
+    elif bonus_type == 'counts-img':
+        # pixel image (for Vizdoom)
+        state_key = tuple(env_output['frame'].contiguous().view(-1).tolist())
+    else:
+        state_key = ()
+        
+    return state_key
+    
+    
+
+
+
 
 def act(i: int,
         free_queue: mp.Queue,
@@ -242,6 +274,7 @@ def act(i: int,
         encoder: torch.nn.Module,
         buffers: Buffers, 
         episode_state_count_dict: dict,
+        global_state_count_dict: dict,
         initial_agent_state_buffers, 
         flags):
     try:
@@ -288,40 +321,58 @@ def act(i: int,
             for i, tensor in enumerate(agent_state):
                 initial_agent_state_buffers[index][i][...] = tensor                
 
+
+
+            state_key = extract_state_key(env_output, flags)
+
+                
+            '''
             if flags.episodic_bonus_type == 'counts-obs':
                 # full observation: glyph image + stats + message
-                episode_state_key = tuple(env_output['glyphs'].view(-1).tolist() \
+                state_key = tuple(env_output['glyphs'].view(-1).tolist() \
                                           + env_output['blstats'].view(-1).tolist() \
                                           + env_output['message'].view(-1).tolist())
             elif flags.episodic_bonus_type == 'counts-msg':
                 # message only
-                episode_state_key = tuple(env_output['message'].view(-1).tolist())
+                state_key = tuple(env_output['message'].view(-1).tolist())
             elif flags.episodic_bonus_type == 'counts-glyphs':
                 # glyph image only
-                episode_state_key = tuple(env_output['glyphs'].view(-1).tolist())
+                state_key = tuple(env_output['glyphs'].view(-1).tolist())
             elif flags.episodic_bonus_type == 'counts-pos':
                 # (x, y) position extracted from the stats vector
-                episode_state_key = tuple(env_output['blstats'].view(-1).tolist()[:2])
+                state_key = tuple(env_output['blstats'].view(-1).tolist()[:2])
             elif flags.episodic_bonus_type == 'counts-img':
                 # pixel image (for Vizdoom)
-                episode_state_key = tuple(env_output['frame'].contiguous().view(-1).tolist())
+                state_key = tuple(env_output['frame'].contiguous().view(-1).tolist())
             else:
-                episode_state_key = ()
+                state_key = ()
 
-                
+            print(state_key)
+            '''
+
 
             if flags.episodic_bonus_type in ['counts-obs', 'counts-msg', 'counts-glyphs', 'counts-pos', 'counts-img']:
-                if episode_state_key in episode_state_count_dict:
-                    episode_state_count_dict[episode_state_key] += 1
+                if state_key in episode_state_count_dict:
+                    episode_state_count_dict[state_key] += 1
                 else:
-                    episode_state_count_dict.update({episode_state_key: 1})
+                    episode_state_count_dict.update({state_key: 1})
                 buffers['episode_state_count'][index][0, ...] = \
-                    torch.tensor(1 / np.sqrt(episode_state_count_dict.get(episode_state_key)))
+                    torch.tensor(1 / np.sqrt(episode_state_count_dict.get(state_key)))
+
+
+            if flags.global_bonus_type in ['counts-obs', 'counts-msg', 'counts-glyphs', 'counts-pos', 'counts-img']:
+                if state_key in global_state_count_dict:
+                    global_state_count_dict[state_key] += 1
+                else:
+                    global_state_count_dict.update({state_key: 1})
+                buffers['global_state_count'][index][0, ...] = \
+                    torch.tensor(1 / np.sqrt(global_state_count_dict.get(state_key)))
+                
             
             # Reset the episode state counts or (inverse) covariance matrix when the episode is over
             if env_output['done'][0][0]:
                 step = 0
-                for episode_state_key in episode_state_count_dict:
+                for state_key in episode_state_count_dict:
                     episode_state_count_dict = dict()
                 if flags.episodic_bonus_type in ['elliptical-policy', 'elliptical-rand', 'elliptical-icm']:
                     if rank1_update:
@@ -396,31 +447,48 @@ def act(i: int,
                     assert 'counts' in flags.episodic_bonus_type
                     
                 step += 1                
-                               
+
                 
+                '''
                 if flags.episodic_bonus_type == 'counts-obs':
-                    episode_state_key = tuple(env_output['glyphs'].view(-1).tolist() \
+                    state_key = tuple(env_output['glyphs'].view(-1).tolist() \
                                               + env_output['blstats'].view(-1).tolist() \
                                               + env_output['message'].view(-1).tolist())
                 elif flags.episodic_bonus_type == 'counts-msg':
-                    episode_state_key = tuple(env_output['message'].view(-1).tolist())
+                    state_key = tuple(env_output['message'].view(-1).tolist())
                 elif flags.episodic_bonus_type == 'counts-glyphs':
-                    episode_state_key = tuple(env_output['glyphs'].view(-1).tolist())
+                    state_key = tuple(env_output['glyphs'].view(-1).tolist())
                 elif flags.episodic_bonus_type == 'counts-pos':
-                    episode_state_key = tuple(env_output['blstats'].view(-1).tolist()[:2])
+                    state_key = tuple(env_output['blstats'].view(-1).tolist()[:2])
                 elif flags.episodic_bonus_type == 'counts-img':
-                    episode_state_key = tuple(env_output['frame'].contiguous().view(-1).tolist())
+                    state_key = tuple(env_output['frame'].contiguous().view(-1).tolist())
                 else:
-                    episode_state_key = ()
+                    state_key = ()
+                '''
+
+                state_key = extract_state_key(env_output, flags)
+
+#                print(state_key)
+                
                 
                     
                 if flags.episodic_bonus_type in ['counts-obs', 'counts-msg', 'counts-glyphs', 'counts-pos', 'counts-img']:
-                    if episode_state_key in episode_state_count_dict:
-                        episode_state_count_dict[episode_state_key] += 1
+                    if state_key in episode_state_count_dict:
+                        episode_state_count_dict[state_key] += 1
                     else:
-                        episode_state_count_dict.update({episode_state_key: 1})
+                        episode_state_count_dict.update({state_key: 1})
                     buffers['episode_state_count'][index][t + 1, ...] = \
-                        torch.tensor(1 / np.sqrt(episode_state_count_dict.get(episode_state_key)))
+                        torch.tensor(1 / np.sqrt(episode_state_count_dict.get(state_key)))
+
+
+                if flags.global_bonus_type in ['counts-obs', 'counts-msg', 'counts-glyphs', 'counts-pos', 'counts-img']:
+                    if state_key in global_state_count_dict:
+                        global_state_count_dict[state_key] += 1
+                    else:
+                        global_state_count_dict.update({state_key: 1})
+                    buffers['global_state_count'][index][t + 1, ...] = \
+                        torch.tensor(1 / np.sqrt(global_state_count_dict.get(state_key)))
+                    
 
                 timings.time('bonus update')
                 # Reset the episode state counts/covariance when the episode is over

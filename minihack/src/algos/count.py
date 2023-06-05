@@ -40,18 +40,28 @@ def learn(actor_model,
     """Performs a learning (optimization) step."""
     with lock:
 
-        # this is 1/sqrt(N)
-        intrinsic_rewards = batch['episode_state_count'][1:].float().to(device=flags.device)
+        if flags.episodic_bonus_type != 'none':
+            # this is 1/sqrt(N)
+            intrinsic_rewards_episodic = batch['episode_state_count'][1:].float().to(device=flags.device)
+            intrinsic_rewards_episodic = (intrinsic_rewards_episodic == 1).float()
 
-        if flags.count_reward_type == 'ind':
-            # set to 1 if N==1, else 0 like in NovelD
-            intrinsic_rewards = (intrinsic_rewards == 1).float()
-            
-#        intrinsic_reward_coef = flags.intrinsic_reward_coef
-#        intrinsic_rewards *= intrinsic_reward_coef 
+        if flags.global_bonus_type != 'none':
+            # this is 1/sqrt(N)
+            intrinsic_rewards_global = batch['global_state_count'][1:].float().to(device=flags.device)
+
         
-        learner_outputs, unused_state = model(batch, initial_agent_state)
-    
+        if flags.episodic_bonus_type != 'none' and flags.global_bonus_type == 'none':
+            intrinsic_rewards = intrinsic_rewards_episodic
+        elif flags.episodic_bonus_type == 'none' and flags.global_bonus_type != 'none':
+            intrinsic_rewards = intrinsic_rewards_global
+        elif flags.episodic_bonus_type != 'none' and flags.global_bonus_type != 'none':
+            intrinsic_rewards = intrinsic_rewards_episodic * intrinsic_rewards_global
+        
+                
+        print(intrinsic_rewards)
+            
+        
+        learner_outputs, unused_state = model(batch, initial_agent_state)    
         bootstrap_value = learner_outputs['baseline'][-1]
 
         batch = {key: tensor[1:] for key, tensor in batch.items()}
@@ -120,7 +130,6 @@ def learn(actor_model,
         total_loss.backward()
         nn.utils.clip_grad_norm_(model.parameters(), flags.max_grad_norm)
         optimizer.step()
-#        scheduler.step()
 
         actor_model.load_state_dict(model.state_dict())
         return stats
@@ -132,11 +141,12 @@ def train(flags):
     xpid += f'env_{flags.env}'
     xpid += f'-model_{flags.model}'
     xpid += f'-btype_{flags.episodic_bonus_type}'
-    xpid += f'-ctype_{flags.count_reward_type}'
+    xpid += f'-gtype_{flags.global_bonus_type}'
     xpid += f'-lr_{flags.learning_rate}'
     xpid += f'-entropy_{flags.entropy_cost}'
     xpid += f'-intrew_{flags.intrinsic_reward_coef}'
     xpid += f'-rn_{flags.reward_norm}'
+    xpid += f'-nc_{flags.num_contexts}'
     xpid += f'-seed_{flags.seed}'
 
     flags.xpid = xpid
@@ -173,17 +183,6 @@ def train(flags):
         model = models.NetHackPolicyNet(env.observation_space, env.action_space.n, flags.use_lstm, hidden_dim=flags.hidden_dim)
 
 
-    '''
-    if 'MiniGrid' in flags.env: 
-        if flags.use_fullobs_policy:
-            model = FullObsMinigridPolicyNet(env.observation_space.shape, env.action_space.n)
-        else:
-            model = MinigridPolicyNet(env.observation_space.shape, env.action_space.n)
-    else:
-        model = MarioDoomPolicyNet(env.observation_space.shape, env.action_space.n)
-    '''
-
-    #buffers = create_buffers(env.observation_space.shape, model.num_actions, flags)
     buffers = create_buffers(env.observation_space, model.num_actions, flags)
     
     model.share_memory()
@@ -201,12 +200,12 @@ def train(flags):
     full_queue = ctx.SimpleQueue()
 
     episode_state_count_dict = dict()
-    train_state_count_dict = dict()
+    global_state_count_dict = dict()
     for i in range(flags.num_actors):
         actor = ctx.Process(
             target=act,
             args=(i, free_queue, full_queue, model, None, buffers, 
-                episode_state_count_dict, initial_agent_state_buffers, flags))
+                  episode_state_count_dict, global_state_count_dict, initial_agent_state_buffers, flags))
         actor.start()
         actor_processes.append(actor)
 
@@ -214,19 +213,6 @@ def train(flags):
     if 'MiniHack' in flags.env:
         learner_model = models.NetHackPolicyNet(env.observation_space, env.action_space.n, flags.use_lstm, hidden_dim=flags.hidden_dim).to(flags.device)
         
-
-    '''
-    if 'MiniGrid' in flags.env: 
-        if flags.use_fullobs_policy:
-            learner_model = FullObsMinigridPolicyNet(env.observation_space.shape, env.action_space.n)\
-                .to(device=flags.device)
-        else:
-            learner_model = MinigridPolicyNet(env.observation_space.shape, env.action_space.n)\
-                .to(device=flags.device)
-    else:
-        learner_model = MarioDoomPolicyNet(env.observation_space.shape, env.action_space.n)\
-            .to(device=flags.device)
-    '''
 
     optimizer = torch.optim.RMSprop(
         learner_model.parameters(),

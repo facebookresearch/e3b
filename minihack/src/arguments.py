@@ -29,6 +29,8 @@ parser.add_argument('--reward_norm', default='int', type=str,
                     help='Running normalization for reward. Can be int (normalize intrinsic reward), \
                     ext (normalize extrinsic reward) or all (normalize the sum of the two)')
 parser.add_argument('--decay_lr', default=0, type=int, help='decay learning rate (1 for true, 0 for false)')
+parser.add_argument('--num_contexts', default=-1, type=int,
+                    help='Number of distinct contexts. Set to -1 for infinite.')
 
 
 
@@ -53,12 +55,11 @@ parser.add_argument('--num_threads', default=4, type=int,
                     metavar='N', help='Number learner threads.')
 parser.add_argument('--disable_cuda', action='store_true',
                     help='Disable CUDA.')
-parser.add_argument('--max_grad_norm', default=40., type=float,
-                    metavar='MGN', help='Max norm of gradients.')
+parser.add_argument('--max_grad_norm', default=40., type=float, metavar='MGN',
+                    help='Max norm of gradients.')
 parser.add_argument('--hidden_dim', default=1024, type=int)
-parser.add_argument('--msg_model', default="lt_cnn", type=str, help='Architecture for reading messages')
-#parser.add_argument('--use_lstm', action='store_true',
-#                    help='Use a lstm version of policy network.')
+parser.add_argument('--msg_model', default="lt_cnn", type=str,
+                    help='Architecture for reading messages')
 parser.add_argument('--use_lstm', default=1, type=int,
                     help='Use a lstm version of policy network.')
 parser.add_argument('--use_lstm_intrinsic', action='store_true',
@@ -104,7 +105,10 @@ parser.add_argument('--rnd_loss_coef', default=1.0, type=float,
                     help='Coefficient for the RND loss coefficient relative to the IMPALA one.')
 parser.add_argument('--count_reward_type', default='ind', type=str)
 parser.add_argument('--encoder_momentum_update', default=1.0, type=float)
-parser.add_argument('--episodic_bonus_type', default='counts', type=str)
+parser.add_argument('--episodic_bonus_type', default='counts-pos', type=str)
+parser.add_argument('--global_bonus_type', default='none', type=str)
+parser.add_argument('--bonus_combine', default='mult', type=str)
+parser.add_argument('--global_bonus_coeff', default=1.0, type=float)
 parser.add_argument('--ridge', default=0.1, type=float, help='covariance matrix regularizer for E3B')
 
 # Singleton Environments.

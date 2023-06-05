@@ -9,7 +9,8 @@ import torch
 from collections import deque, defaultdict
 from gym import spaces
 import numpy as np
-from gym_minigrid.minigrid import OBJECT_TO_IDX, COLOR_TO_IDX
+import random
+#from gym_minigrid.minigrid import OBJECT_TO_IDX, COLOR_TO_IDX
 import pdb
 
 
@@ -52,7 +53,8 @@ class Environment:
         self.episode_win = torch.zeros(1, 1, dtype=torch.int32)
         initial_done = torch.ones(1, 1, dtype=torch.uint8)
         if self.fix_seed:
-            self.gym_env.seed(seed=self.env_seed)
+            seed = random.choice(self.env_seed)
+            self.gym_env.seed(seed)
         obs = self.gym_env.reset()
         if type(obs) is dict:
             initial_frame = _format_observations_nethack(obs)
@@ -96,7 +98,8 @@ class Environment:
         
         if done:
             if self.fix_seed:
-                self.gym_env.seed(seed=self.env_seed)
+                seed = random.choice(self.env_seed)
+                self.gym_env.seed(seed)
             frame = self.gym_env.reset()
             self.episode_return = torch.zeros(1, 1)
             self.episode_step = torch.zeros(1, 1, dtype=torch.int32)

@@ -137,239 +137,170 @@ def main():
         cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
         args.ncpu = 40
         print(cmds)
-
         
-    # ablation: E3B (non-episodic), i.e. with lifelong novelty bonus
-    elif args.task == 'train-elliptical-lifelong':
-        SAVEDIR = './results/elliptical_lifelong/'
+
+    elif args.task == 'train-counts-episodic-multiroom':
+        SAVEDIR = './results/counts_episodic_multiroom/'
         make_code_snapshot(SAVEDIR)
         overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['e3b'])
-        overrides.add('episodic_bonus_type', ['elliptical-icm-lifelong'])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['counts-pos'])
+        overrides.add('global_bonus_type', ['none'])
+        overrides.add('env', ['MiniHack-MultiRoom-N6-Lava-v0'])
         overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('ridge', [0.1])
-        overrides.add('reward_norm', ['int'])
-        overrides.add('intrinsic_reward_coef', [1.0]) 
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('num_contexts', [1, 3, 5, 10, -1])
         overrides.add('seed', [1, 2, 3, 4, 5])
         cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
         args.ncpu = 40
         print(cmds)
 
-        
-
-    # ablation: E3B with fixed random encoder 
-    elif args.task == 'train-elliptical-rand-encoder':
-        SAVEDIR = './results/elliptical_rand_encoder/'
+    elif args.task == 'train-counts-global-multiroom':
+        SAVEDIR = './results/counts_global_multiroom/'
+#        SAVEDIR = './results/tmp/'
         make_code_snapshot(SAVEDIR)
         overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['e3b'])
-        overrides.add('predictor_learning_rate', [0.0])
-        overrides.add('episodic_bonus_type', ['elliptical-icm'])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['none'])
+        overrides.add('global_bonus_type', ['counts-pos'])
+        overrides.add('env', ['MiniHack-MultiRoom-N6-Lava-v0'])
         overrides.add('savedir', [SAVEDIR])
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('num_contexts', [1, 3, 5, 10, -1])
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+
+
+    elif args.task == 'train-counts-episodic-corridors':
+        SAVEDIR = './results/counts_episodic_corridors/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['counts-pos'])
+        overrides.add('global_bonus_type', ['none'])
+        overrides.add('env', ['MiniHack-Corridor-R5-v0'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('num_contexts', [1])
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+        
+
+    elif args.task == 'train-counts-global-corridors':
+        SAVEDIR = './results/counts_global_corridors/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['none'])
+        overrides.add('global_bonus_type', ['counts-pos'])
+        overrides.add('env', ['MiniHack-Corridor-R5-v0'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('num_contexts', [1])
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+
+
+
+    elif args.task == 'train-counts-episodic-msg':
+        SAVEDIR = './results/counts_episodic_msg/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['counts-msg'])
+        overrides.add('global_bonus_type', ['none'])
+        overrides.add('env', ['MiniHack-KeyRoom-S10-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('num_contexts', [-1])
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+        
+
+    elif args.task == 'train-counts-global-msg':
+        SAVEDIR = './results/counts_global_msg/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['none'])
+        overrides.add('global_bonus_type', ['counts-msg'])
+        overrides.add('env', ['MiniHack-KeyRoom-S10-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('num_contexts', [-1])
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+
+
+    elif args.task == 'train-counts-combined-pos':
+        SAVEDIR = './results/counts_combined_pos/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['counts-pos'])
+        overrides.add('global_bonus_type', ['counts-pos'])
+#        overrides.add('env', ['MiniHack-Corridors-R5-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
+        overrides.add('env', ['MiniHack-Corridor-R5-v0'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('num_contexts', [1, -1])
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+
+
+    elif args.task == 'train-counts-combined-msg':
+        SAVEDIR = './results/counts_combined_msg/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['count'])
+        overrides.add('episodic_bonus_type', ['counts-msg'])
+        overrides.add('global_bonus_type', ['counts-msg'])
+        overrides.add('env', ['MiniHack-KeyRoom-S10-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('num_contexts', [-1])
+#        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 2.0, 10.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
+        overrides.add('intrinsic_reward_coef', [2.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
+        overrides.add('seed', [1, 2, 3, 4, 5])
+        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
+        args.ncpu = 40
+        print(cmds)
+
+
+    elif args.task == 'train-e3b-noveld':
+        SAVEDIR = './results/e3b_noveld_debug/'
+        make_code_snapshot(SAVEDIR)
+        overrides.add('learning_rate', [0.0001])
+        overrides.add('model', ['e3b-noveld'])
+        overrides.add('episodic_bonus_type', ['elliptical-icm'])
         overrides.add('env', ALL_TASKS)
-        overrides.add('ridge', [0.1])
-        overrides.add('reward_norm', ['int'])
+        overrides.add('savedir', [SAVEDIR])
+        overrides.add('num_contexts', [-1])
+#        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 2.0, 10.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
         overrides.add('intrinsic_reward_coef', [1.0])
         overrides.add('seed', [1, 2, 3, 4, 5])
         cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
         args.ncpu = 40
         print(cmds)
-
-
-    # ablation: E3B with policy network encoder
-    elif args.task == 'train-elliptical-policy-encoder':
-        SAVEDIR = './results/elliptical_policy_encoder/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['e3b'])
-        overrides.add('predictor_learning_rate', [0.0])
-        overrides.add('episodic_bonus_type', ['elliptical-policy'])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('ridge', [0.1])
-        overrides.add('reward_norm', ['int'])
-        overrides.add('intrinsic_reward_coef', [1.0])
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-        
-
-
-    # E3B on Vizdoom
-    elif args.task == 'train-elliptical-vizdoom':
-        SAVEDIR = './results/vizdoom/elliptical_final/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['e3b'])
-        overrides.add('episodic_bonus_type', ['elliptical-icm'])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ['VizdoomMyWayHomeDense-v0', 'VizdoomMyWayHomeSparse-v0', 'VizdoomMyWayHomeVerySparse-v0'])
-        overrides.add('ridge', [0.1])
-        overrides.add('reward_norm', ['none'])
-        overrides.add('hidden_dim', [288])
-        overrides.add('intrinsic_reward_coef', [3e-5, 1e-5, 3e-6, 1e-6, 3e-7, 0.0])
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-        
-
-        
-
-                
-
-    # NovelD with 4 variants for the episodic bonus:
-    # -standard (episodic_bonus_type = counts-obs)
-    # -symbolic image (episodic_bonus_type = counts-glyphs)
-    # -(x, y) coordinates (episodic_bonus_type = counts-pos)
-    # -message (episodic_bonus_type = counts-msg)
-    elif args.task == 'train-noveld':
-        SAVEDIR = './results/noveld/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['bebold'])
-        overrides.add('episodic_bonus_type', ['counts-glyphs', 'counts-pos', 'counts-msg', 'counts-obs'])
-        overrides.add('count_reward_type', ['ind'])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('reward_norm', ['int'])
-        overrides.add('intrinsic_reward_coef', [1.0]) 
-        overrides.add('scale_fac', [0.1]) # tried 0.5, 0.1 in early experiments, 0.1 worked best
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-
-
-    # NovelD on Vizdoom 
-    elif args.task == 'train-noveld-vizdoom':
-        SAVEDIR = './results/vizdoom/noveld/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0005])
-        overrides.add('model', ['bebold'])
-        overrides.add('episodic_bonus_type', ['counts-img'])
-        overrides.add('count_reward_type', ['ind'])
-        overrides.add('total_frames', [int(1e7)])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('hidden_dim', [288])
-        overrides.add('entropy_cost', [0.005, 0.0005])
-        overrides.add('env', ['VizdoomMyWayHomeDense-v0', 'VizdoomMyWayHomeSparse-v0', 'VizdoomMyWayHomeVerySparse-v0'])
-        overrides.add('intrinsic_reward_coef', [1e-2, 3e-3, 1e-3, 3e-4, 1e-4, 3e-5, 1e-5])
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-        
-
-        
-    # train RIDE on MiniHack
-    elif args.task == 'train-ride':
-        SAVEDIR = './results/ride/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['ride'])
-        overrides.add('episodic_bonus_type', ['counts-obs'])
-        overrides.add('count_reward_type', ['ind'])
-        overrides.add('forward_loss_coef', [1.0]) # from MiniHack paper
-        overrides.add('inverse_loss_coef', [0.1]) # MiniHack paper uses 0.1, also try 1.0
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('intrinsic_reward_coef', [0.001, 0.01, 0.1, 1.0]) # MiniHack paper uses 0.1, sweep around
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-
-
-    # train RIDE on Vizdoom
-    elif args.task == 'train-ride-vizdoom':
-        SAVEDIR = './results/vizdoom/ride/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0005])
-        overrides.add('model', ['ride'])
-        overrides.add('episodic_bonus_type', ['counts-img'])
-        overrides.add('count_reward_type', ['ind'])
-        overrides.add('forward_loss_coef', [0.5]) # from author
-        overrides.add('inverse_loss_coef', [0.8]) # from author
-        overrides.add('pg_loss_coef', [0.1]) # from author
-        overrides.add('total_frames', [int(1e7)])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ['VizdoomMyWayHomeDense-v0', 'VizdoomMyWayHomeSparse-v0', 'VizdoomMyWayHomeVerySparse-v0'])
-        overrides.add('intrinsic_reward_coef', [1e-2, 3e-3, 1e-3, 3e-4, 1e-4])
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-
-
-    # train RND on MiniHack
-    elif args.task == 'train-rnd':
-        SAVEDIR = './results/rnd/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['rnd'])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('intrinsic_reward_coef', [0.001]) 
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-
-    # train ICM on MiniHack
-    elif args.task == 'train-icm':
-        SAVEDIR = './results/icm/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['curiosity'])
-        overrides.add('episodic_bonus_type', ['counts-obs'])
-        overrides.add('forward_loss_coef', [1.0]) # from MiniHack paper
-        overrides.add('inverse_loss_coef', [0.1]) # MiniHack paper uses 0.1
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('intrinsic_reward_coef', [0.1]) 
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-
-
-    # train ICM on Vizdoom
-    elif args.task == 'train-icm-vizdoom':
-        SAVEDIR = './results/vizdoom/icm/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0005])
-        overrides.add('model', ['curiosity'])
-        overrides.add('episodic_bonus_type', ['counts-img'])
-        overrides.add('entropy_cost', [0.005]) # from author
-        overrides.add('forward_loss_coef', [0.2]) # from author
-        overrides.add('inverse_loss_coef', [0.8]) # from author
-        overrides.add('total_frames', [int(1e7)])
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('env', ['VizdoomMyWayHomeDense-v0', 'VizdoomMyWayHomeSparse-v0', 'VizdoomMyWayHomeVerySparse-v0'])
-        overrides.add('intrinsic_reward_coef', [0.001, 0.003, 0.01, 0.03]) 
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
-
         
         
         
-    # train IMPALA on MiniHack
-    elif args.task == 'train-impala':
-        SAVEDIR = './results/impala/'
-        make_code_snapshot(SAVEDIR)
-        overrides.add('learning_rate', [0.0001])
-        overrides.add('model', ['vanilla'])
-        overrides.add('env', ALL_TASKS)
-        overrides.add('savedir', [SAVEDIR])
-        overrides.add('seed', [1, 2, 3, 4, 5])
-        cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
-        args.ncpu = 40
-        print(cmds)
+        
+        
+
+
+        
         
         
         
@@ -381,6 +312,7 @@ def main():
 #    cmds = [cmd + f' --device {args.device}' for cmd in cmds]
     n_jobs = len(cmds)
     print(f'submitting {n_jobs} jobs')
+    import pdb; pdb.set_trace()
     for i in range(n_jobs):
         if args.dry:
             print(cmds[i])
