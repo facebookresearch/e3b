@@ -1,6 +1,6 @@
 # Exploration via Elliptical Episodic Bonuses
 
-This repo contains code for the E3B algorithm described in the NeurIPS 2022 paper [Exploration via Elliptical Episodic Bonuses](https://arxiv.org/abs/2210.05805) by Mikael Henaff, Roberta Raileanu, Minqi Jiang and Tim Rocktäschel. 
+This repo contains code for the E3B algorithm described in the NeurIPS 2022 paper [Exploration via Elliptical Episodic Bonuses](https://arxiv.org/abs/2210.05805) by Mikael Henaff, Roberta Raileanu, Minqi Jiang and Tim Rocktäschel, as well as the ICML 2023 paper [A Study of Global and Episodic Bonuses for Exploration in Contextual MDPs](https://arxiv.org/abs/2306.03236) by Mikael Henaff, Minqi Jiang and Roberta Raileanu. 
 
 E3B is an exploration algorithm designed for contextual MDPs, where the environment changes every episode. Examples of contextual MDPs include procedurally-generated environments such as MiniGrid, MiniHack, NetHack, ProcGen, and embodied AI settings such as Habitat where the agent finds itself in a new indoor space each episode.
 
@@ -25,6 +25,18 @@ If you use this code in your work, please cite the following:
   year      =     {2022}
 }
 ```
+
+and/or
+
+```
+@inproceedings{E3B,
+  title     =     {A Study of Global and Episodic Bonuses for Exploration in Contextual MDPs},
+  author    =     {Mikael Henaff and Minqi Jiang and Roberta Raileanu},
+  booktitle =     {International Conference on Machine Learning (ICML)},
+  year      =     {2023}
+}
+```
+
 
 ## Acknowledgements
 
