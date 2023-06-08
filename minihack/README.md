@@ -1,6 +1,6 @@
 # Exploration via Elliptical Episodic Bonuses
 
-Here is the code accompanying the paper "Exploration via Elliptical Episodic Bonuses". To install the dependencies, run:
+To install the dependencies, run:
 
 ```
 conda create -n e3b python=3.8
@@ -19,15 +19,17 @@ OMP_NUM_THREADS=1 python main.py  --learning_rate 0.0001 --model e3b --episodic_
 The file `sweep_slurm.py` will submit SLURM jobs for the experiments in the paper (may require some editing based on your computing infrastructure). It can also be run with the argument `--dry`, which will print out a list of commands instead. For example:
 
 ```
-python sweep_slurm.py --task train-elliptical 
+python sweep_slurm_neurips_2022.py --task train-elliptical 
 ```
 
 trains E3B on all MiniHack tasks.
 
 ```
-python sweep_slurm.py --task train-noveld --dry
+python sweep_slurm_neurips_2022.py --task train-noveld --dry
 ```
 
 will print out all the commands to train NovelD (standard NovelD and the 3 variants described in the paper) on MiniHack.
+
+The `sweep_slurm_icml_2023.py` file contains the commands to run the MiniHack experiments from the paper [A Study of Global and Episodic Bonuses for Exploration in Contextual MDPs](https://arxiv.org/abs/2306.03236). This includes both the count-based global and episodic bonus experiments in Section 3 and the E3BxRND algorithm in Section 4. 
 
 
