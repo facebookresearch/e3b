@@ -139,6 +139,7 @@ def main():
         print(cmds)
         
 
+    # MultiRoom with episodic bonus and positional encodings as described in Section 3.1
     elif args.task == 'train-counts-episodic-multiroom':
         SAVEDIR = './results/counts_episodic_multiroom/'
         make_code_snapshot(SAVEDIR)
@@ -155,6 +156,7 @@ def main():
         args.ncpu = 40
         print(cmds)
 
+    # MultiRoom with global bonus and positional encodings as described in Section 3.1
     elif args.task == 'train-counts-global-multiroom':
         SAVEDIR = './results/counts_global_multiroom/'
 #        SAVEDIR = './results/tmp/'
@@ -173,6 +175,7 @@ def main():
         print(cmds)
 
 
+    # Corridors with episodic bonus and positional encodings as described in Section 3.2
     elif args.task == 'train-counts-episodic-corridors':
         SAVEDIR = './results/counts_episodic_corridors/'
         make_code_snapshot(SAVEDIR)
@@ -190,6 +193,7 @@ def main():
         print(cmds)
         
 
+    # Corridors with global bonus and positional encodings as described in Section 3.2
     elif args.task == 'train-counts-global-corridors':
         SAVEDIR = './results/counts_global_corridors/'
         make_code_snapshot(SAVEDIR)
@@ -207,7 +211,7 @@ def main():
         print(cmds)
 
 
-
+    # KeyRoom and MultiRoom with episodic bonus and message encodings as described in Section 3.2
     elif args.task == 'train-counts-episodic-msg':
         SAVEDIR = './results/counts_episodic_msg/'
         make_code_snapshot(SAVEDIR)
@@ -225,6 +229,7 @@ def main():
         print(cmds)
         
 
+    # KeyRoom and MultiRoom with global bonus and message encodings as described in Section 3.2
     elif args.task == 'train-counts-global-msg':
         SAVEDIR = './results/counts_global_msg/'
         make_code_snapshot(SAVEDIR)
@@ -242,6 +247,7 @@ def main():
         print(cmds)
 
 
+    # Combined bonus with positional encodings (Section 3.4)
     elif args.task == 'train-counts-combined-pos':
         SAVEDIR = './results/counts_combined_pos/'
         make_code_snapshot(SAVEDIR)
@@ -249,8 +255,7 @@ def main():
         overrides.add('model', ['count'])
         overrides.add('episodic_bonus_type', ['counts-pos'])
         overrides.add('global_bonus_type', ['counts-pos'])
-#        overrides.add('env', ['MiniHack-Corridors-R5-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
-        overrides.add('env', ['MiniHack-Corridor-R5-v0'])
+        overrides.add('env', ['MiniHack-Corridor-R5-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
         overrides.add('savedir', [SAVEDIR])
         overrides.add('num_contexts', [1, -1])
         overrides.add('intrinsic_reward_coef', [0.1, 1.0, 10.0])
@@ -260,6 +265,7 @@ def main():
         print(cmds)
 
 
+    # Combined bonus with message encodings (Section 3.4)
     elif args.task == 'train-counts-combined-msg':
         SAVEDIR = './results/counts_combined_msg/'
         make_code_snapshot(SAVEDIR)
@@ -270,24 +276,25 @@ def main():
         overrides.add('env', ['MiniHack-KeyRoom-S10-v0', 'MiniHack-MultiRoom-N6-Lava-v0'])
         overrides.add('savedir', [SAVEDIR])
         overrides.add('num_contexts', [-1])
-#        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 2.0, 10.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
-        overrides.add('intrinsic_reward_coef', [2.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
+        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 2.0, 10.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
         overrides.add('seed', [1, 2, 3, 4, 5])
         cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
         args.ncpu = 40
         print(cmds)
 
 
+    # Combined bonus for E3Bx{NovelD, RND} (Section 4.2)
+    # args.scale_fac=0 corresponds to E3BxRND
     elif args.task == 'train-e3b-noveld':
-        SAVEDIR = './results/e3b_noveld_debug/'
+        SAVEDIR = './results/e3b_noveld/'
         make_code_snapshot(SAVEDIR)
         overrides.add('learning_rate', [0.0001])
         overrides.add('model', ['e3b-noveld'])
         overrides.add('episodic_bonus_type', ['elliptical-icm'])
         overrides.add('env', ALL_TASKS)
         overrides.add('savedir', [SAVEDIR])
+        overrides.add('scale_fac', [0.0, 0.1])
         overrides.add('num_contexts', [-1])
-#        overrides.add('intrinsic_reward_coef', [0.1, 1.0, 2.0, 10.0]) # we include 2.0 for MultiRoom, this one is a bit more sensitive
         overrides.add('intrinsic_reward_coef', [1.0])
         overrides.add('seed', [1, 2, 3, 4, 5])
         cmds, jobs = overrides.parse('OMP_NUM_THREADS=1 python main.py ', cmd_format='argparse')
@@ -297,14 +304,7 @@ def main():
         
         
         
-        
-
-
-        
-        
-        
-        
-        
+            
         
         
 
