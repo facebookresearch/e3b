@@ -16,13 +16,13 @@ To run the code, follow the installation instructions from the original [Sample 
 The `sweep_slurm.py` script can be used to submit jobs on Slurm. To run vanilla APPO, run:
 
 ```
-python sweep_slurm_neurips_2022.py --task train-appo
+python sweep_slurm.py --task train-appo
 ```
 
 To run APPO with the E3B bonus, run:
 
 ```
-python sweep_slurm_neurips_2022.py --task train-appo-e3b
+python sweep_slurm.py --task train-appo-e3b
 ```
 
 Use the `--dry` flag to get individual commands that can be run locally.
