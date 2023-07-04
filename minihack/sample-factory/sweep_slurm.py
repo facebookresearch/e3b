@@ -123,7 +123,7 @@ ALL_TASKS = SKILL_TASKS + NAV_TASKS
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--task', default='train-elliptical')
+    parser.add_argument('--task', default='train-appo')
     parser.add_argument('--queue', default='learnlab')
     parser.add_argument('--dry', action='store_true')
     parser.add_argument('--indx', type=int, default=-1)
@@ -133,10 +133,9 @@ def main():
             
         
     # train APPO on MiniHack
-    if args.task == 'train':
-#        tag = 'sf_appo_nethack'
-        tag = 'sf_skills_full'
-        savedir = f'/checkpoint/mikaelhenaff/sf_release/{tag}/'
+    if args.task == 'train-appo':
+        tag = 'sf_appo'
+        savedir = f'./results/{tag}/'
         make_code_snapshot(savedir)
         overrides.add('env', ALL_TASKS)
         overrides.add('experiment', [tag])
@@ -152,9 +151,9 @@ def main():
 
         
         
-    if args.task == 'train-e3b':
-        tag = 'sf_e3b_all_tasks'
-        savedir = f'/checkpoint/mikaelhenaff/sf_release/{tag}/'
+    if args.task == 'train-appo-e3b':
+        tag = 'sf_appo_e3b'
+        savedir = f'./results/{tag}/'
         make_code_snapshot(savedir)
         overrides.add('env', ALL_TASKS)
         overrides.add('experiment', [tag])
