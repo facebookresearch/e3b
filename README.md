@@ -46,7 +46,7 @@ and/or
 
 ## Acknowledgements
 
-This repo is built on the [Torchbeast](https://github.com/facebookresearch/torchbeast) code. We also use parts of the [RIDE](https://github.com/facebookresearch/impact-driven-exploration) and [NovelD](https://github.com/tianjunz/NovelD) codebases for baselines.
+This repo is built on the [Torchbeast](https://github.com/facebookresearch/torchbeast), [Habitat](https://github.com/facebookresearch/habitat-lab) and [Sample Factory](https://github.com/alex-petrenko/sample-factory) code. We also use parts of the [RIDE](https://github.com/facebookresearch/impact-driven-exploration) and [NovelD](https://github.com/tianjunz/NovelD) codebases for baselines.
 
 ## License
 
