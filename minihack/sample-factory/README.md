@@ -7,7 +7,7 @@ This repo includes E3B implemented using the APPO algorithm from the [Sample Fac
 - Simplify the message encoder
 - Add Layer Norm to the output of the feature encoder
 
-The resulting implementation runs at about ~10k FPS on a P100 GPU. This enables experiments to be run in 1-2 hours, instead of about 20 with the previous TorchBeast implementation.
+The resulting implementation runs at about ~10k FPS on a P100 GPU. This enables experiments to be run in 1-2 hours instead of ~20 hours with the previous TorchBeast implementation, while giving similar performance. 
 
 # Running the code
 
