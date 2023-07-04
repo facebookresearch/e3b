@@ -1,0 +1,177 @@
+site_name: Sample Factory Documentation
+
+# Repository
+repo_name: alex-petrenko/sample-factory
+repo_url: https://github.com/alex-petrenko/sample-factory
+
+# Configuration
+theme:
+  name: material
+  nav_style: dark
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: blue grey
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  # [TODO] add a favicon and icon here
+  # favicon: assets/favicon.png
+  icon:
+    # logo: logo
+    repo: fontawesome/brands/github
+  language: en
+  direction: ltr
+  features:
+    # - navigation.instant
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    # - navigation.prune
+    # - navigation.indexes
+    - navigation.top
+    # - toc.follow
+    # - toc.integrate
+    - search.suggest
+    - search.highlight
+
+# Copyright
+copyright: Copyright &copy; 2022, Sample Factory. All rights reserved.
+
+# Plugins
+plugins:
+  - search
+  - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+
+# Footer
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:apetrenko1991@gmail.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/alex-petrenko
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/apetrenko-nn/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/petrenko_ai
+    - icon: fontawesome/solid/user
+      link: https://alex-petrenko.github.io/
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          # format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Overview: index.md
+  - Get Started:
+    - 01-get-started/installation.md
+    - 01-get-started/basic-usage.md
+  - Basic Guides:
+    - Configuration:
+      - 02-configuration/configuration.md
+      - 02-configuration/cfg-params.md
+    - Customization:
+      - 03-customization/custom-environments.md
+      - 03-customization/custom-multi-agent-environments.md
+      - 03-customization/custom-models.md
+    - Running Experiments:
+      - 04-experiments/experiment-launcher.md
+      - 04-experiments/slurm-details.md
+    - Monitoring Experiments:
+      - 05-monitoring/tensorboard.md
+      - 05-monitoring/wandb.md
+      - 05-monitoring/custom-metrics.md
+      - 05-monitoring/metrics-reference.md
+  - Architecture:
+    - 06-architecture/overview.md
+    - 06-architecture/message-passing.md
+  - Advanced Topics:
+    - 07-advanced-topics/sync-async.md
+    - 07-advanced-topics/double-buffered.md
+    - 07-advanced-topics/batched-non-batched.md
+    - 07-advanced-topics/serial-mode.md
+    - 07-advanced-topics/normalizations.md
+    - 07-advanced-topics/policy-lag.md
+    - 07-advanced-topics/multi-policy-training.md
+    - 07-advanced-topics/pbt.md
+    - 07-advanced-topics/inactive-agents.md
+    - 07-advanced-topics/passing-info.md
+    - 07-advanced-topics/observer.md
+    - 07-advanced-topics/profiling.md
+  - Miscellaneous:
+    - 08-miscellaneous/tests.md
+    - 08-miscellaneous/v1-to-v2.md
+  - Environment Integrations:
+    - 09-environment-integrations/mujoco.md
+    - 09-environment-integrations/atari.md
+    - 09-environment-integrations/vizdoom.md
+    - 09-environment-integrations/dmlab.md
+    - 09-environment-integrations/megaverse.md
+    - 09-environment-integrations/envpool.md
+    - 09-environment-integrations/isaacgym.md
+    - 09-environment-integrations/brax.md
+    - 09-environment-integrations/swarm-rl.md
+  - Huggingface Integration:
+    - 10-huggingface/huggingface.md
+  - Release Notes:
+    - 11-release-notes/release-notes.md
+  - Community:
+    - 12-community/contribution.md
+    - 12-community/doc-contribution.md
+    - 12-community/citation.md

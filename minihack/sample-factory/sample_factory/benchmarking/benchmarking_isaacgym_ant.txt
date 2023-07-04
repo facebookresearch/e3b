@@ -1,0 +1,148 @@
+V23 adam
+[2022-04-01 01:33:58,556][884528] Collected {0: 10027008}, FPS: 217925.6
+[2022-04-01 01:33:58,556][884528] Profiling tree view:
+main_loop: 45.7104
+  prepare_batch: 0.5910
+  sampling: 34.9542
+    norm: 0.6325, inference: 2.9278, post_inference: 0.3432, env_step: 29.2298, post_env_step: 1.2018
+  train: 9.8325
+    prepare_train: 0.0248, epoch_init: 0.0065, minibatch_init: 0.0796, forward_head: 0.2322, bptt_initial: 0.0075, bptt: 0.0121, tail: 4.4462, losses: 0.5395, kl_divergence: 0.6036, update: 3.4014, after_optimizer: 0.0323
+
+V23 lamb
+--algo=APPO --env=isaacgym_ant --experiment=ant_v023_023_test_perf_c89b_lamb --actor_worker_gpus 0 --train_for_env_steps=10000000 --env_agents=4096 --batch_size=32768 --env_headless=True --policy_initialization=torch_default --use_rnn=False --value_bootstrap=True --normalize_input=True --optimizer=lamb --with_wandb=False --save_every_sec=15 --wandb_group=isaacgym_ant_sf2 --wandb_tags ant sync
+[2022-04-01 01:36:22,833][885177] Collected {0: 10027008}, FPS: 204651.1
+[2022-04-01 01:36:22,833][885177] Profiling tree view:
+main_loop: 48.6754
+  prepare_batch: 0.6108
+  sampling: 35.0360
+    norm: 0.6187, inference: 2.8134, post_inference: 0.3398, env_step: 29.3718, post_env_step: 1.2625
+  train: 12.6660
+    prepare_train: 0.0241, epoch_init: 0.0066, minibatch_init: 0.0828, forward_head: 0.2463, bptt_initial: 0.0077, bptt: 0.0142, tail: 2.8746, losses: 0.5413, kl_divergence: 0.6111, update: 7.7650, after_optimizer: 0.0228
+
+V26: minor optimization, such as torch.jit for the normalizer
+[2022-04-04 22:48:02,356][2078364] Collected {0: 10027008}, FPS: 220434.8
+[2022-04-04 22:48:02,356][2078364] Profiling tree view:
+main_loop: 45.1901
+  prepare_batch: 0.8792
+  sampling: 34.1431
+    norm: 0.6982, inference: 2.9006, post_inference: 0.3601, env_step: 28.3416, post_env_step: 1.2260
+  train: 9.8336
+    prepare_train: 0.0252, epoch_init: 0.0055, minibatch_init: 0.0673, forward_head: 0.2091, bptt_initial: 0.0074, bptt: 0.0118, tail: 4.3844, losses: 0.5198, kl_divergence: 0.5518, update: 3.6099, after_optimizer: 0.0320
+
+V32: serial
+[2022-04-11 01:43:23,964][18725] Learner profile tree view:
+prepare_batch: 0.8708
+train: 9.9026
+  prepare_train: 0.0281, epoch_init: 0.0051, minibatch_init: 0.0634, forward_head: 0.2087, bptt_initial: 0.0074, bptt: 0.0117, tail: 4.5736, losses: 0.4968, kl_divergence: 0.5430, update: 3.5350, after_optimizer: 0.0305
+[2022-04-11 01:43:23,964][18725] Runner profile tree view:
+main_loop: 50.2899
+  sampling: 34.3149
+    update_model: 0.0277, norm: 0.6735, inference: 2.8782, post_inference: 0.3393, env_step: 28.5841, post_env_step: 1.1803
+[2022-04-11 01:43:23,964][18725] Collected {0: 10027008}, FPS: 198081.0
+
+
+V32: async
+[2022-04-11 01:46:23,983][19106] Learner profile tree view:
+prepare_batch: 0.8984
+train: 10.3077
+  prepare_train: 0.0307, epoch_init: 0.0053, minibatch_init: 0.0687, forward_head: 0.1817, bptt_initial: 0.0082, bptt: 0.0127, tail: 4.5786, losses: 0.5350, kl_divergence: 0.6819, update: 3.7481, after_optimizer: 0.0299
+[2022-04-11 01:46:23,923][18989] Runner profile tree view:
+main_loop: 54.7549
+  sampling: 35.3402
+    norm: 0.7236, inference: 2.9740, post_inference: 0.3589, env_step: 29.1849, post_env_step: 1.2290
+    update_model: 0.1627
+      weight_update: 0.0009
+[2022-04-11 01:46:23,924][18989] Collected {0: 10027008}, FPS: 181928.2
+
+
+V34: sampler and learner in separate processes
+[2022-04-12 00:26:50,731][197453] Sampler 0 profile tree view:
+sampling: 34.3587
+  norm: 0.6877, inference: 2.8764, post_inference: 0.3548, env_step: 28.4133, post_env_step: 1.2128
+  update_model: 0.1366
+    weight_update: 0.0007
+[2022-04-12 00:26:50,804][197454] Learner 0 profile tree view:
+prepare_batch: 0.9221
+train: 10.0057
+  prepare_train: 0.0318, epoch_init: 0.0050, minibatch_init: 0.0672, forward_head: 0.1731, bptt_initial: 0.0071, bptt: 0.0119, tail: 4.5950, losses: 0.5061, kl_divergence: 0.6507, update: 3.5271, after_optimizer: 0.0316
+[2022-04-12 00:26:50,805][197298] Runner profile tree view:
+main_loop: 53.5740
+[2022-04-12 00:26:50,805][197298] Collected {0: 10092544}, FPS: 187161.9
+
+
+V35: async
+[2022-04-13 08:56:14,247][654483] Sampler 0 profile tree view:
+sampling: 39.9410
+  norm: 0.6651, inference: 4.3195, post_inference: 0.3141, env_step: 32.3745, post_env_step: 1.2054
+  update_model: 0.4335
+    weight_update: 0.0007
+[2022-04-13 08:56:14,320][654487] Learner 0 profile tree view:
+prepare_batch: 1.0170
+train: 14.8677
+  prepare_train: 0.0307, epoch_init: 0.0061, minibatch_init: 0.0779, forward_head: 0.1899, bptt_initial: 0.0076, bptt: 0.0135, tail: 7.6801, losses: 0.8741, kl_divergence: 1.4890, update: 3.8281, after_optimizer: 0.0485
+main_loop: 48.5318
+[2022-04-13 08:56:14,321][654331] Collected {0: 10092544}, FPS: 206607.0
+
+
+V38: splitting sampler into rollout and inference workers
+[2022-05-13 17:17:13,750][1000657] RolloutWorker_w0 profile tree view:
+wait_for_trajectories: 0.0106, prepare_next_step: 0.3165, process_policy_outputs: 0.2432, env_step: 28.1420, post_env_step: 1.1494, finalize_trajectories: 0.0151, complete_rollouts: 0.0187, enqueue_policy_requests: 0.1268
+[2022-05-13 17:17:13,755][1000657] Learner 0 profile tree view:
+prepare_batch: 0.8561
+train: 8.8249
+  prepare_train: 0.0264, epoch_init: 0.0051, minibatch_init: 0.0656, forward_head: 0.2107, bptt_initial: 0.0076, bptt: 0.0125, tail: 0.6685, losses: 0.5427, kl_divergence: 0.3583, update: 3.5369, after_optimizer: 0.0333
+[2022-05-13 17:17:13,755][1000657] InferenceWorker_p0-w0 profile tree view:
+update_model: 0.0405
+one_step: 0.0012
+  handle_policy_step: 4.2129
+    deserialize: 0.0360, stack: 0.0117, norm: 0.6499, forward: 2.1697, save_outputs: 0.4586, send_messages: 0.1487
+    obs_to_device: 0.4803
+      model_eval: 0.3383
+[2022-05-13 17:17:13,756][1000657] Runner profile tree view:
+main_loop: 47.4741
+[2022-05-13 17:17:13,756][1000657] Collected {0: 10027008}, FPS: 209829.6
+
+V72
+[2022-08-02 22:57:49,534][1273242] Batcher 0 profile tree view:
+batching: 0.0438, releasing_batches: 0.0048
+[2022-08-02 22:57:49,534][1273242] InferenceWorker_p0-w0 profile tree view:
+update_model: 0.0310
+one_step: 0.0011
+  handle_policy_step: 3.7004
+    deserialize: 0.0363, stack: 0.0048, obs_to_device_normalize: 0.7883, forward: 2.1767, save_outputs: 0.3913, send_messages: 0.0657
+[2022-08-02 22:57:49,534][1273242] Learner 0 profile tree view:
+prepare_batch: 1.2283
+train: 8.4075
+  prepare_train: 0.0082, epoch_init: 0.0061, minibatch_init: 0.0607, losses_postprocess: 2.2293, kl_divergence: 0.3792, update: 3.2412, after_optimizer: 0.0294
+  calculate_losses: 1.2311
+    losses_init: 0.0020, forward_head: 0.2047, bptt_initial: 0.0069, bptt: 0.0089, tail: 0.5580, advantages_returns: 0.0892, losses: 0.2474
+[2022-08-02 22:57:49,534][1273242] RolloutWorker_w0 profile tree view:
+wait_for_trajectories: 0.0067, prepare_next_step: 0.3253, enqueue_policy_requests: 0.0246, process_policy_outputs: 0.2326, env_step: 29.4539, finalize_trajectories: 0.0152, complete_rollouts: 0.0085
+post_env_step: 1.4866
+  process_env_step: 0.7230
+[2022-08-02 22:57:49,534][1273242] Runner profile tree view:
+main_loop: 47.3281
+[2022-08-02 22:57:49,534][1273242] Collected {0: 10027008}, FPS: 211861.7
+
+v78
+python -m sf_examples.isaacgym_examples.train_isaacgym --algo=APPO --env=Ant --experiment=ant_v078 --train_for_env_steps=10000000 --use_rnn=False --recurrence=1 --serial_mode=True --async_rl=False --restart_behavior=restart
+[2022-10-12 20:55:10,496][805069] Batcher 0 profile tree view:
+batching: 0.0514, releasing_batches: 0.0065
+[2022-10-12 20:55:10,496][805069] InferenceWorker_p0-w0 profile tree view:
+update_model: 0.0404
+one_step: 0.0018
+  handle_policy_step: 4.3097
+    deserialize: 0.0471, stack: 0.0050, obs_to_device_normalize: 0.8609, forward: 2.6274, prepare_outputs: 0.4568, send_messages: 0.0704
+[2022-10-12 20:55:10,496][805069] Learner 0 profile tree view:
+misc: 0.0008, prepare_batch: 1.2483
+train: 8.4735
+  epoch_init: 0.0055, minibatch_init: 0.0720, losses_postprocess: 2.0041, kl_divergence: 0.4214, update: 3.5573, after_optimizer: 0.0486
+  calculate_losses: 1.2784
+    losses_init: 0.0021, forward_head: 0.1930, bptt_initial: 0.0079, bptt: 0.0107, tail: 0.5941, advantages_returns: 0.0896, losses: 0.2626
+[2022-10-12 20:55:10,496][805069] RolloutWorker_w0 profile tree view:
+wait_for_trajectories: 0.0086, enqueue_policy_requests: 0.4201, process_policy_outputs: 0.2640, env_step: 32.3259, finalize_trajectories: 0.0180, complete_rollouts: 0.0092
+post_env_step: 1.6537
+  process_env_step: 0.8048
+[2022-10-12 20:55:10,497][805069] Runner profile tree view:
+main_loop: 51.4596
+[2022-10-12 20:55:10,497][805069] Collected {0: 10092544}, FPS: 196125.5

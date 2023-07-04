@@ -1,0 +1,1136 @@
+[2023-06-29 13:48:47,706][1318814] Saving configuration to debug1/debug/config.json...
+[2023-06-29 13:48:47,883][1318814] Rollout worker 0 uses device cpu
+[2023-06-29 13:48:47,883][1318814] Rollout worker 1 uses device cpu
+[2023-06-29 13:48:47,883][1318814] Rollout worker 2 uses device cpu
+[2023-06-29 13:48:47,883][1318814] Rollout worker 3 uses device cpu
+[2023-06-29 13:48:47,883][1318814] Rollout worker 4 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 5 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 6 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 7 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 8 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 9 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 10 uses device cpu
+[2023-06-29 13:48:47,884][1318814] Rollout worker 11 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 12 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 13 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 14 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 15 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 16 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 17 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 18 uses device cpu
+[2023-06-29 13:48:47,885][1318814] Rollout worker 19 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 20 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 21 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 22 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 23 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 24 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 25 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 26 uses device cpu
+[2023-06-29 13:48:47,886][1318814] Rollout worker 27 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 28 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 29 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 30 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 31 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 32 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 33 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 34 uses device cpu
+[2023-06-29 13:48:47,887][1318814] Rollout worker 35 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 36 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 37 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 38 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 39 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 40 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 41 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 42 uses device cpu
+[2023-06-29 13:48:47,888][1318814] Rollout worker 43 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 44 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 45 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 46 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 47 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 48 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 49 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 50 uses device cpu
+[2023-06-29 13:48:47,889][1318814] Rollout worker 51 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 52 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 53 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 54 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 55 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 56 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 57 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 58 uses device cpu
+[2023-06-29 13:48:47,890][1318814] Rollout worker 59 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 60 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 61 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 62 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 63 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 64 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 65 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 66 uses device cpu
+[2023-06-29 13:48:47,891][1318814] Rollout worker 67 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 68 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 69 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 70 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 71 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 72 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 73 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 74 uses device cpu
+[2023-06-29 13:48:47,892][1318814] Rollout worker 75 uses device cpu
+[2023-06-29 13:48:47,893][1318814] Rollout worker 76 uses device cpu
+[2023-06-29 13:48:47,893][1318814] Rollout worker 77 uses device cpu
+[2023-06-29 13:48:47,893][1318814] Rollout worker 78 uses device cpu
+[2023-06-29 13:48:47,893][1318814] Rollout worker 79 uses device cpu
+[2023-06-29 13:48:48,413][1318814] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2023-06-29 13:48:48,413][1318814] InferenceWorker_p0-w0: min num requests: 26
+[2023-06-29 13:48:48,677][1318814] Starting all processes...
+[2023-06-29 13:48:48,677][1318814] Starting process learner_proc0
+[2023-06-29 13:48:48,727][1318814] Starting all processes...
+[2023-06-29 13:48:48,735][1318814] Starting process inference_proc0-0
+[2023-06-29 13:48:48,735][1318814] Starting process rollout_proc1
+[2023-06-29 13:48:48,735][1318814] Starting process rollout_proc3
+[2023-06-29 13:48:48,735][1318814] Starting process rollout_proc5
+[2023-06-29 13:48:48,736][1318814] Starting process rollout_proc7
+[2023-06-29 13:48:48,736][1318814] Starting process rollout_proc9
+[2023-06-29 13:48:48,739][1318814] Starting process rollout_proc11
+[2023-06-29 13:48:48,742][1318814] Starting process rollout_proc13
+[2023-06-29 13:48:48,746][1318814] Starting process rollout_proc15
+[2023-06-29 13:48:48,752][1318814] Starting process rollout_proc17
+[2023-06-29 13:48:48,767][1318814] Starting process rollout_proc2
+[2023-06-29 13:48:48,768][1318814] Starting process rollout_proc8
+[2023-06-29 13:48:48,768][1318814] Starting process rollout_proc19
+[2023-06-29 13:48:48,768][1318814] Starting process rollout_proc0
+[2023-06-29 13:48:48,768][1318814] Starting process rollout_proc21
+[2023-06-29 13:48:48,768][1318814] Starting process rollout_proc6
+[2023-06-29 13:48:48,769][1318814] Starting process rollout_proc23
+[2023-06-29 13:48:48,785][1318814] Starting process rollout_proc10
+[2023-06-29 13:48:48,785][1318814] Starting process rollout_proc25
+[2023-06-29 13:48:48,793][1318814] Starting process rollout_proc27
+[2023-06-29 13:48:48,793][1318814] Starting process rollout_proc4
+[2023-06-29 13:48:48,793][1318814] Starting process rollout_proc14
+[2023-06-29 13:48:48,798][1318814] Starting process rollout_proc29
+[2023-06-29 13:48:48,806][1318814] Starting process rollout_proc12
+[2023-06-29 13:48:48,820][1318814] Starting process rollout_proc16
+[2023-06-29 13:48:48,834][1318814] Starting process rollout_proc18
+[2023-06-29 13:48:48,842][1318814] Starting process rollout_proc31
+[2023-06-29 13:48:48,869][1318814] Starting process rollout_proc33
+[2023-06-29 13:48:48,905][1318814] Starting process rollout_proc35
+[2023-06-29 13:48:48,919][1318814] Starting process rollout_proc20
+[2023-06-29 13:48:48,924][1318814] Starting process rollout_proc22
+[2023-06-29 13:48:48,947][1318814] Starting process rollout_proc37
+[2023-06-29 13:48:48,958][1318814] Starting process rollout_proc24
+[2023-06-29 13:48:49,022][1318814] Starting process rollout_proc38
+[2023-06-29 13:48:49,060][1318814] Starting process rollout_proc39
+[2023-06-29 13:48:49,076][1318814] Starting process rollout_proc41
+[2023-06-29 13:48:49,095][1318814] Starting process rollout_proc36
+[2023-06-29 13:48:49,111][1318814] Starting process rollout_proc45
+[2023-06-29 13:48:49,112][1318814] Starting process rollout_proc47
+[2023-06-29 13:48:49,113][1318814] Starting process rollout_proc49
+[2023-06-29 13:48:49,113][1318814] Starting process rollout_proc51
+[2023-06-29 13:48:49,113][1318814] Starting process rollout_proc28
+[2023-06-29 13:48:49,122][1318814] Starting process rollout_proc34
+[2023-06-29 13:48:49,109][1318814] Starting process rollout_proc43
+[2023-06-29 13:48:49,123][1318814] Starting process rollout_proc53
+[2023-06-29 13:48:49,123][1318814] Starting process rollout_proc30
+[2023-06-29 13:48:49,123][1318814] Starting process rollout_proc55
+[2023-06-29 13:48:49,123][1318814] Starting process rollout_proc26
+[2023-06-29 13:48:49,124][1318814] Starting process rollout_proc32
+[2023-06-29 13:48:49,138][1318814] Starting process rollout_proc57
+[2023-06-29 13:48:49,170][1318814] Starting process rollout_proc40
+[2023-06-29 13:48:49,188][1318814] Starting process rollout_proc59
+[2023-06-29 13:48:49,213][1318814] Starting process rollout_proc46
+[2023-06-29 13:48:49,232][1318814] Starting process rollout_proc42
+[2023-06-29 13:48:49,236][1318814] Starting process rollout_proc61
+[2023-06-29 13:48:49,242][1318814] Starting process rollout_proc63
+[2023-06-29 13:48:49,247][1318814] Starting process rollout_proc44
+[2023-06-29 13:48:49,255][1318814] Starting process rollout_proc50
+[2023-06-29 13:48:49,254][1318814] Starting process rollout_proc52
+[2023-06-29 13:48:49,268][1318814] Starting process rollout_proc48
+[2023-06-29 13:48:49,283][1318814] Starting process rollout_proc65
+[2023-06-29 13:48:49,320][1318814] Starting process rollout_proc67
+[2023-06-29 13:48:49,321][1318814] Starting process rollout_proc54
+[2023-06-29 13:48:49,349][1318814] Starting process rollout_proc60
+[2023-06-29 13:48:49,385][1318814] Starting process rollout_proc69
+[2023-06-29 13:48:49,386][1318814] Starting process rollout_proc71
+[2023-06-29 13:48:49,426][1318814] Starting process rollout_proc73
+[2023-06-29 13:48:49,435][1318814] Starting process rollout_proc58
+[2023-06-29 13:48:49,441][1318814] Starting process rollout_proc75
+[2023-06-29 13:48:49,444][1318814] Starting process rollout_proc62
+[2023-06-29 13:48:49,463][1318814] Starting process rollout_proc77
+[2023-06-29 13:48:49,467][1318814] Starting process rollout_proc79
+[2023-06-29 13:48:49,470][1318814] Starting process rollout_proc64
+[2023-06-29 13:48:49,487][1318814] Starting process rollout_proc56
+[2023-06-29 13:48:49,557][1318814] Starting process rollout_proc70
+[2023-06-29 13:48:49,644][1318814] Starting process rollout_proc74
+[2023-06-29 13:48:49,659][1318814] Starting process rollout_proc68
+[2023-06-29 13:48:49,660][1318814] Starting process rollout_proc72
+[2023-06-29 13:48:49,700][1318814] Starting process rollout_proc66
+[2023-06-29 13:48:49,701][1318814] Starting process rollout_proc76
+[2023-06-29 13:48:49,713][1318814] Starting process rollout_proc78
+[2023-06-29 13:48:54,411][1319062] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2023-06-29 13:48:54,411][1319062] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for learning process 0
+[2023-06-29 13:48:54,427][1319062] Num visible devices: 1
+[2023-06-29 13:48:54,459][1319062] Setting fixed seed 3
+[2023-06-29 13:48:54,468][1319062] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2023-06-29 13:48:54,468][1319062] Initializing actor-critic model on device cuda:0
+[2023-06-29 13:48:54,469][1319062] RunningMeanStd input shape: (1,)
+[2023-06-29 13:48:54,516][1319062] Created Actor Critic model with architecture:
+[2023-06-29 13:48:54,516][1319062] ActorCriticSharedWeights(
+  (obs_normalizer): ObservationNormalizer()
+  (intrinsic_reward_normalizer): RunningMeanStdInPlace()
+  (encoder): MiniHackEncoder(
+    (crop): Crop()
+    (embed): Embedding(5976, 64)
+    (embed_blstats): Sequential(
+      (0): Linear(in_features=27, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): ReLU()
+    )
+    (extract_crop_representation): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): Sequential(
+        (0): ELU(alpha=1.0)
+      )
+      (2): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (3): Sequential(
+        (0): ELU(alpha=1.0)
+      )
+    )
+    (char_lt): Embedding(256, 16, padding_idx=0)
+    (conv1): Conv1d(16, 32, kernel_size=(7,), stride=(1,))
+    (conv2_6_fc): Sequential(
+      (0): ReLU()
+      (1): MaxPool1d(kernel_size=3, stride=3, padding=0, dilation=1, ceil_mode=False)
+      (2): Conv1d(32, 32, kernel_size=(7,), stride=(1,))
+      (3): ReLU()
+      (4): MaxPool1d(kernel_size=3, stride=3, padding=0, dilation=1, ceil_mode=False)
+      (5): Conv1d(32, 32, kernel_size=(3,), stride=(1,))
+      (6): ReLU()
+      (7): MaxPool1d(kernel_size=3, stride=3, padding=0, dilation=1, ceil_mode=False)
+      (8): Flatten()
+      (9): Linear(in_features=96, out_features=32, bias=True)
+      (10): ReLU()
+      (11): Linear(in_features=32, out_features=32, bias=True)
+    )
+    (fc): Sequential(
+      (0): Linear(in_features=2144, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+    )
+  )
+  (core): ModelCoreRNN(
+    (core): LSTM(256, 128)
+  )
+  (decoder): MlpDecoder(
+    (mlp): Identity()
+  )
+  (critic_linear): Linear(in_features=128, out_features=1, bias=True)
+  (action_parameterization): ActionParameterizationDefault(
+    (distribution_linear): Linear(in_features=128, out_features=8, bias=True)
+  )
+)
+[2023-06-29 13:48:54,649][1319089] Worker 11 uses CPU cores [11]
+[2023-06-29 13:48:54,732][1319085] Worker 5 uses CPU cores [5]
+[2023-06-29 13:48:54,739][1319083] Worker 1 uses CPU cores [1]
+[2023-06-29 13:48:54,747][1319087] Worker 9 uses CPU cores [9]
+[2023-06-29 13:48:54,754][1319084] Worker 7 uses CPU cores [7]
+[2023-06-29 13:48:54,759][1319082] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2023-06-29 13:48:54,759][1319082] Set environment var CUDA_VISIBLE_DEVICES to '0' (GPU indices [0]) for inference process 0
+[2023-06-29 13:48:54,778][1319082] Num visible devices: 1
+[2023-06-29 13:48:54,812][1319153] Worker 15 uses CPU cores [15]
+[2023-06-29 13:48:54,859][1319086] Worker 3 uses CPU cores [3]
+[2023-06-29 13:48:54,895][1319088] Worker 13 uses CPU cores [13]
+[2023-06-29 13:48:54,959][1319154] Worker 17 uses CPU cores [17]
+[2023-06-29 13:48:54,959][1319157] Worker 8 uses CPU cores [8]
+[2023-06-29 13:48:55,055][1319190] Worker 0 uses CPU cores [0]
+[2023-06-29 13:48:55,055][1319349] Worker 21 uses CPU cores [21]
+[2023-06-29 13:48:55,079][1319673] Worker 16 uses CPU cores [16]
+[2023-06-29 13:48:55,108][1319247] Worker 19 uses CPU cores [19]
+[2023-06-29 13:48:55,111][1319676] Worker 20 uses CPU cores [20]
+[2023-06-29 13:48:55,121][1319681] Worker 27 uses CPU cores [27]
+[2023-06-29 13:48:55,126][1319667] Worker 10 uses CPU cores [10]
+[2023-06-29 13:48:55,148][1319885] Worker 45 uses CPU cores [45]
+[2023-06-29 13:48:55,154][1319669] Worker 37 uses CPU cores [37]
+[2023-06-29 13:48:55,174][1319680] Worker 14 uses CPU cores [14]
+[2023-06-29 13:48:55,187][1319675] Worker 4 uses CPU cores [4]
+[2023-06-29 13:48:55,190][1319155] Worker 2 uses CPU cores [2]
+[2023-06-29 13:48:55,220][1319672] Worker 18 uses CPU cores [18]
+[2023-06-29 13:48:55,231][1319751] Worker 38 uses CPU cores [38]
+[2023-06-29 13:48:55,236][1319683] Worker 24 uses CPU cores [24]
+[2023-06-29 13:48:55,241][1319671] Worker 33 uses CPU cores [33]
+[2023-06-29 13:48:55,241][1319677] Worker 35 uses CPU cores [35]
+[2023-06-29 13:48:55,255][1319678] Worker 29 uses CPU cores [29]
+[2023-06-29 13:48:55,263][1319890] Worker 43 uses CPU cores [43]
+[2023-06-29 13:48:55,271][1319748] Worker 25 uses CPU cores [25]
+[2023-06-29 13:48:55,271][1320077] Worker 59 uses CPU cores [59]
+[2023-06-29 13:48:55,293][1319817] Worker 41 uses CPU cores [41]
+[2023-06-29 13:48:55,308][1319682] Worker 31 uses CPU cores [31]
+[2023-06-29 13:48:55,311][1319418] Worker 23 uses CPU cores [23]
+[2023-06-29 13:48:55,317][1319747] Worker 12 uses CPU cores [12]
+[2023-06-29 13:48:55,321][1319883] Worker 28 uses CPU cores [28]
+[2023-06-29 13:48:55,323][1319350] Worker 6 uses CPU cores [6]
+[2023-06-29 13:48:55,335][1319670] Worker 22 uses CPU cores [22]
+[2023-06-29 13:48:55,340][1319884] Worker 34 uses CPU cores [34]
+[2023-06-29 13:48:55,340][1319887] Worker 51 uses CPU cores [51]
+[2023-06-29 13:48:55,346][1320090] Worker 46 uses CPU cores [46]
+[2023-06-29 13:48:55,347][1319886] Worker 36 uses CPU cores [36]
+[2023-06-29 13:48:55,352][1320927] Worker 62 uses CPU cores [62]
+[2023-06-29 13:48:55,352][1320019] Worker 30 uses CPU cores [30]
+[2023-06-29 13:48:55,355][1319752] Worker 39 uses CPU cores [39]
+[2023-06-29 13:48:55,368][1320087] Worker 26 uses CPU cores [26]
+[2023-06-29 13:48:55,377][1320020] Worker 53 uses CPU cores [53]
+[2023-06-29 13:48:55,390][1320157] Worker 52 uses CPU cores [52]
+[2023-06-29 13:48:55,395][1320088] Worker 50 uses CPU cores [50]
+[2023-06-29 13:48:55,395][1320931] Worker 75 uses CPU cores [75]
+[2023-06-29 13:48:55,395][1320113] Worker 61 uses CPU cores [61]
+[2023-06-29 13:48:55,400][1320018] Worker 40 uses CPU cores [40]
+[2023-06-29 13:48:55,408][1320795] Worker 69 uses CPU cores [69]
+[2023-06-29 13:48:55,411][1320929] Worker 73 uses CPU cores [73]
+[2023-06-29 13:48:55,411][1321062] Worker 77 uses CPU cores [77]
+[2023-06-29 13:48:55,411][1319954] Worker 47 uses CPU cores [47]
+[2023-06-29 13:48:55,413][1320089] Worker 57 uses CPU cores [57]
+[2023-06-29 13:48:55,421][1320861] Worker 67 uses CPU cores [67]
+[2023-06-29 13:48:55,423][1320221] Worker 63 uses CPU cores [63]
+[2023-06-29 13:48:55,424][1320223] Worker 32 uses CPU cores [32]
+[2023-06-29 13:48:55,425][1320156] Worker 44 uses CPU cores [44]
+[2023-06-29 13:48:55,427][1321117] Worker 72 uses CPU cores [72]
+[2023-06-29 13:48:55,428][1320930] Worker 58 uses CPU cores [58]
+[2023-06-29 13:48:55,432][1320860] Worker 60 uses CPU cores [60]
+[2023-06-29 13:48:55,437][1320925] Worker 64 uses CPU cores [64]
+[2023-06-29 13:48:55,439][1320321] Worker 54 uses CPU cores [54]
+[2023-06-29 13:48:55,441][1320928] Worker 79 uses CPU cores [79]
+[2023-06-29 13:48:55,442][1320225] Worker 55 uses CPU cores [55]
+[2023-06-29 13:48:55,450][1320155] Worker 42 uses CPU cores [42]
+[2023-06-29 13:48:55,450][1321193] Worker 74 uses CPU cores [74]
+[2023-06-29 13:48:55,453][1320768] Worker 48 uses CPU cores [48]
+[2023-06-29 13:48:55,453][1321194] Worker 78 uses CPU cores [78]
+[2023-06-29 13:48:55,458][1319889] Worker 49 uses CPU cores [49]
+[2023-06-29 13:48:55,459][1321191] Worker 66 uses CPU cores [66]
+[2023-06-29 13:48:55,459][1321060] Worker 70 uses CPU cores [70]
+[2023-06-29 13:48:55,459][1320796] Worker 71 uses CPU cores [71]
+[2023-06-29 13:48:55,462][1321061] Worker 56 uses CPU cores [56]
+[2023-06-29 13:48:55,467][1320963] Worker 65 uses CPU cores [65]
+[2023-06-29 13:48:55,470][1321192] Worker 68 uses CPU cores [68]
+[2023-06-29 13:48:55,471][1321190] Worker 76 uses CPU cores [76]
+[2023-06-29 13:48:56,882][1319062] Using optimizer <class 'torch.optim.adam.Adam'>
+[2023-06-29 13:48:56,885][1319062] No checkpoints found
+[2023-06-29 13:48:56,885][1319062] Did not load from checkpoint, starting from scratch!
+[2023-06-29 13:48:56,886][1319062] Initialized policy 0 weights for model version 0
+[2023-06-29 13:48:56,889][1319062] LearnerWorker_p0 finished initialization!
+[2023-06-29 13:48:56,890][1319062] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[2023-06-29 13:48:56,891][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:48:56,919][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:48:57,133][1319082] RunningMeanStd input shape: (1,)
+[2023-06-29 13:48:58,756][1318814] Fps is (10 sec: nan, 60 sec: nan, 300 sec: nan). Total num frames: 0. Throughput: 0: nan. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:48:58,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:48:58,849][1318814] Inference worker 0-0 is ready!
+[2023-06-29 13:48:58,850][1318814] All inference workers are ready! Signal rollout workers to start!
+[2023-06-29 13:49:03,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:03,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:08,405][1318814] Heartbeat connected on Batcher_0
+[2023-06-29 13:49:08,408][1318814] Heartbeat connected on LearnerWorker_p0
+[2023-06-29 13:49:08,441][1318814] Heartbeat connected on InferenceWorker_p0-w0
+[2023-06-29 13:49:08,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:08,757][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:13,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:13,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:18,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:18,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:23,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:23,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:28,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:28,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:33,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:33,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:38,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:38,757][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:43,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:43,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:48,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:48,757][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:53,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:53,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:49:58,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:49:58,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:03,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:03,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:08,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:08,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:13,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:13,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:18,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:18,757][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:23,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:23,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:28,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:28,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:33,757][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:33,759][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:38,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:38,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:43,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:43,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:48,187][1318814] Heartbeat connected on RolloutWorker_w66
+[2023-06-29 13:50:48,188][1318814] Heartbeat connected on RolloutWorker_w42
+[2023-06-29 13:50:48,189][1318814] Heartbeat connected on RolloutWorker_w30
+[2023-06-29 13:50:48,189][1318814] Heartbeat connected on RolloutWorker_w7
+[2023-06-29 13:50:48,189][1318814] Heartbeat connected on RolloutWorker_w32
+[2023-06-29 13:50:48,192][1318814] Heartbeat connected on RolloutWorker_w79
+[2023-06-29 13:50:48,193][1318814] Heartbeat connected on RolloutWorker_w50
+[2023-06-29 13:50:48,195][1318814] Heartbeat connected on RolloutWorker_w11
+[2023-06-29 13:50:48,201][1318814] Heartbeat connected on RolloutWorker_w51
+[2023-06-29 13:50:48,225][1318814] Heartbeat connected on RolloutWorker_w48
+[2023-06-29 13:50:48,233][1318814] Heartbeat connected on RolloutWorker_w1
+[2023-06-29 13:50:48,241][1318814] Heartbeat connected on RolloutWorker_w43
+[2023-06-29 13:50:48,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:48,757][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth...
+[2023-06-29 13:50:52,819][1319062] Signal inference workers to stop experience collection...
+[2023-06-29 13:50:52,869][1319082] InferenceWorker_p0-w0: stopping experience collection
+[2023-06-29 13:50:53,756][1318814] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 697.3. Samples: 31380. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[2023-06-29 13:50:54,127][1319062] Signal inference workers to resume experience collection...
+[2023-06-29 13:50:54,128][1319082] InferenceWorker_p0-w0: resuming experience collection
+[2023-06-29 13:50:54,860][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000002_8192.pth...
+[2023-06-29 13:50:58,756][1318814] Fps is (10 sec: 2867.2, 60 sec: 477.9, 300 sec: 238.9). Total num frames: 28672. Throughput: 0: 868.0. Samples: 39060. Policy #0 lag: (min: 0.0, avg: 0.0, max: 0.0)
+[2023-06-29 13:50:58,757][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000007_28672.pth...
+[2023-06-29 13:50:58,816][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000000_0.pth
+[2023-06-29 13:50:59,213][1319082] Updated weights for policy 0, policy_version 10 (0.0015)
+[2023-06-29 13:51:03,613][1319082] Updated weights for policy 0, policy_version 20 (0.0014)
+[2023-06-29 13:51:03,756][1318814] Fps is (10 sec: 8601.7, 60 sec: 1433.6, 300 sec: 688.1). Total num frames: 86016. Throughput: 0: 1860.0. Samples: 83700. Policy #0 lag: (min: 0.0, avg: 0.8, max: 8.0)
+[2023-06-29 13:51:03,757][1318814] Avg episode reward: [(0, '-2.971')]
+[2023-06-29 13:51:03,827][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000022_90112.pth...
+[2023-06-29 13:51:03,838][1318814] Heartbeat connected on RolloutWorker_w78
+[2023-06-29 13:51:03,890][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000002_8192.pth
+[2023-06-29 13:51:03,932][1318814] Heartbeat connected on RolloutWorker_w3
+[2023-06-29 13:51:03,935][1318814] Heartbeat connected on RolloutWorker_w47
+[2023-06-29 13:51:03,936][1318814] Heartbeat connected on RolloutWorker_w10
+[2023-06-29 13:51:03,937][1318814] Heartbeat connected on RolloutWorker_w6
+[2023-06-29 13:51:03,938][1318814] Heartbeat connected on RolloutWorker_w55
+[2023-06-29 13:51:03,938][1318814] Heartbeat connected on RolloutWorker_w26
+[2023-06-29 13:51:03,940][1318814] Heartbeat connected on RolloutWorker_w52
+[2023-06-29 13:51:03,941][1318814] Heartbeat connected on RolloutWorker_w54
+[2023-06-29 13:51:03,941][1318814] Heartbeat connected on RolloutWorker_w45
+[2023-06-29 13:51:03,941][1318814] Heartbeat connected on RolloutWorker_w19
+[2023-06-29 13:51:03,942][1318814] Heartbeat connected on RolloutWorker_w68
+[2023-06-29 13:51:03,942][1318814] Heartbeat connected on RolloutWorker_w62
+[2023-06-29 13:51:03,942][1318814] Heartbeat connected on RolloutWorker_w9
+[2023-06-29 13:51:03,943][1318814] Heartbeat connected on RolloutWorker_w71
+[2023-06-29 13:51:03,943][1318814] Heartbeat connected on RolloutWorker_w23
+[2023-06-29 13:51:03,943][1318814] Heartbeat connected on RolloutWorker_w69
+[2023-06-29 13:51:03,944][1318814] Heartbeat connected on RolloutWorker_w49
+[2023-06-29 13:51:03,945][1318814] Heartbeat connected on RolloutWorker_w29
+[2023-06-29 13:51:03,945][1318814] Heartbeat connected on RolloutWorker_w27
+[2023-06-29 13:51:03,945][1318814] Heartbeat connected on RolloutWorker_w67
+[2023-06-29 13:51:03,946][1318814] Heartbeat connected on RolloutWorker_w37
+[2023-06-29 13:51:03,946][1318814] Heartbeat connected on RolloutWorker_w36
+[2023-06-29 13:51:03,946][1318814] Heartbeat connected on RolloutWorker_w77
+[2023-06-29 13:51:03,947][1318814] Heartbeat connected on RolloutWorker_w28
+[2023-06-29 13:51:03,954][1318814] Heartbeat connected on RolloutWorker_w76
+[2023-06-29 13:51:04,013][1318814] Heartbeat connected on RolloutWorker_w8
+[2023-06-29 13:51:04,019][1318814] Heartbeat connected on RolloutWorker_w70
+[2023-06-29 13:51:04,020][1318814] Heartbeat connected on RolloutWorker_w22
+[2023-06-29 13:51:04,021][1318814] Heartbeat connected on RolloutWorker_w2
+[2023-06-29 13:51:04,022][1318814] Heartbeat connected on RolloutWorker_w38
+[2023-06-29 13:51:04,025][1318814] Heartbeat connected on RolloutWorker_w15
+[2023-06-29 13:51:04,027][1318814] Heartbeat connected on RolloutWorker_w12
+[2023-06-29 13:51:04,028][1318814] Heartbeat connected on RolloutWorker_w72
+[2023-06-29 13:51:04,030][1318814] Heartbeat connected on RolloutWorker_w59
+[2023-06-29 13:51:04,031][1318814] Heartbeat connected on RolloutWorker_w5
+[2023-06-29 13:51:04,031][1318814] Heartbeat connected on RolloutWorker_w63
+[2023-06-29 13:51:04,032][1318814] Heartbeat connected on RolloutWorker_w31
+[2023-06-29 13:51:04,035][1318814] Heartbeat connected on RolloutWorker_w24
+[2023-06-29 13:51:04,035][1318814] Heartbeat connected on RolloutWorker_w14
+[2023-06-29 13:51:04,040][1318814] Heartbeat connected on RolloutWorker_w74
+[2023-06-29 13:51:04,042][1318814] Heartbeat connected on RolloutWorker_w44
+[2023-06-29 13:51:04,043][1318814] Heartbeat connected on RolloutWorker_w56
+[2023-06-29 13:51:04,043][1318814] Heartbeat connected on RolloutWorker_w35
+[2023-06-29 13:51:04,043][1318814] Heartbeat connected on RolloutWorker_w60
+[2023-06-29 13:51:04,044][1318814] Heartbeat connected on RolloutWorker_w16
+[2023-06-29 13:51:04,044][1318814] Heartbeat connected on RolloutWorker_w0
+[2023-06-29 13:51:04,044][1318814] Heartbeat connected on RolloutWorker_w4
+[2023-06-29 13:51:04,044][1318814] Heartbeat connected on RolloutWorker_w40
+[2023-06-29 13:51:04,045][1318814] Heartbeat connected on RolloutWorker_w57
+[2023-06-29 13:51:04,045][1318814] Heartbeat connected on RolloutWorker_w65
+[2023-06-29 13:51:04,045][1318814] Heartbeat connected on RolloutWorker_w18
+[2023-06-29 13:51:04,046][1318814] Heartbeat connected on RolloutWorker_w53
+[2023-06-29 13:51:04,046][1318814] Heartbeat connected on RolloutWorker_w33
+[2023-06-29 13:51:04,047][1318814] Heartbeat connected on RolloutWorker_w64
+[2023-06-29 13:51:04,048][1318814] Heartbeat connected on RolloutWorker_w73
+[2023-06-29 13:51:04,048][1318814] Heartbeat connected on RolloutWorker_w34
+[2023-06-29 13:51:04,048][1318814] Heartbeat connected on RolloutWorker_w61
+[2023-06-29 13:51:04,049][1318814] Heartbeat connected on RolloutWorker_w13
+[2023-06-29 13:51:04,050][1318814] Heartbeat connected on RolloutWorker_w25
+[2023-06-29 13:51:04,052][1318814] Heartbeat connected on RolloutWorker_w41
+[2023-06-29 13:51:04,052][1318814] Heartbeat connected on RolloutWorker_w39
+[2023-06-29 13:51:04,054][1318814] Heartbeat connected on RolloutWorker_w21
+[2023-06-29 13:51:04,058][1318814] Heartbeat connected on RolloutWorker_w46
+[2023-06-29 13:51:04,080][1318814] Heartbeat connected on RolloutWorker_w20
+[2023-06-29 13:51:04,082][1318814] Heartbeat connected on RolloutWorker_w75
+[2023-06-29 13:51:04,086][1318814] Heartbeat connected on RolloutWorker_w17
+[2023-06-29 13:51:04,088][1318814] Heartbeat connected on RolloutWorker_w58
+[2023-06-29 13:51:08,757][1318814] Fps is (10 sec: 6143.9, 60 sec: 1501.9, 300 sec: 693.2). Total num frames: 90112. Throughput: 0: 3666.7. Samples: 165000. Policy #0 lag: (min: 0.0, avg: 0.8, max: 8.0)
+[2023-06-29 13:51:08,757][1318814] Avg episode reward: [(0, '-2.983')]
+[2023-06-29 13:51:08,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000022_90112.pth...
+[2023-06-29 13:51:13,756][1318814] Fps is (10 sec: 2867.2, 60 sec: 1911.5, 300 sec: 849.5). Total num frames: 114688. Throughput: 0: 5177.5. Samples: 232990. Policy #0 lag: (min: 0.0, avg: 4.2, max: 15.0)
+[2023-06-29 13:51:13,757][1318814] Avg episode reward: [(0, '-2.983')]
+[2023-06-29 13:51:13,951][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000030_122880.pth...
+[2023-06-29 13:51:14,009][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000007_28672.pth
+[2023-06-29 13:51:14,015][1319062] Saving new best policy, reward=-2.983!
+[2023-06-29 13:51:15,234][1319082] Updated weights for policy 0, policy_version 32 (0.0021)
+[2023-06-29 13:51:17,229][1319082] Updated weights for policy 0, policy_version 44 (0.0027)
+[2023-06-29 13:51:18,757][1318814] Fps is (10 sec: 12697.7, 60 sec: 3618.1, 300 sec: 1550.6). Total num frames: 217088. Throughput: 0: 7146.9. Samples: 321610. Policy #0 lag: (min: 13.0, avg: 20.1, max: 21.0)
+[2023-06-29 13:51:18,757][1318814] Avg episode reward: [(0, '-2.983')]
+[2023-06-29 13:51:18,923][1319062] Signal inference workers to stop experience collection... (50 times)
+[2023-06-29 13:51:19,107][1319062] Signal inference workers to resume experience collection... (50 times)
+[2023-06-29 13:51:19,108][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000055_225280.pth...
+[2023-06-29 13:51:19,138][1319082] InferenceWorker_p0-w0: stopping experience collection (50 times)
+[2023-06-29 13:51:19,139][1319082] InferenceWorker_p0-w0: resuming experience collection (50 times)
+[2023-06-29 13:51:19,181][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000022_90112.pth
+[2023-06-29 13:51:19,318][1319082] Updated weights for policy 0, policy_version 56 (0.0022)
+[2023-06-29 13:51:21,505][1319082] Updated weights for policy 0, policy_version 70 (0.0017)
+[2023-06-29 13:51:23,757][1318814] Fps is (10 sec: 18021.6, 60 sec: 4915.2, 300 sec: 2033.9). Total num frames: 294912. Throughput: 0: 8964.8. Samples: 403420. Policy #0 lag: (min: 40.0, avg: 47.0, max: 48.0)
+[2023-06-29 13:51:23,758][1318814] Avg episode reward: [(0, '-2.983')]
+[2023-06-29 13:51:23,765][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000072_294912.pth...
+[2023-06-29 13:51:23,829][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000030_122880.pth
+[2023-06-29 13:51:27,159][1319082] Updated weights for policy 0, policy_version 82 (0.0028)
+[2023-06-29 13:51:28,756][1318814] Fps is (10 sec: 15565.0, 60 sec: 6212.3, 300 sec: 2484.9). Total num frames: 372736. Throughput: 0: 10689.4. Samples: 481020. Policy #0 lag: (min: 3.0, avg: 18.5, max: 53.0)
+[2023-06-29 13:51:28,758][1318814] Avg episode reward: [(0, '-2.983')]
+[2023-06-29 13:51:28,889][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000092_376832.pth...
+[2023-06-29 13:51:28,982][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000055_225280.pth
+[2023-06-29 13:51:29,332][1319082] Updated weights for policy 0, policy_version 94 (0.0019)
+[2023-06-29 13:51:30,722][1319082] Updated weights for policy 0, policy_version 104 (0.0020)
+[2023-06-29 13:51:30,981][1319062] Signal inference workers to stop experience collection... (100 times)
+[2023-06-29 13:51:31,018][1319082] InferenceWorker_p0-w0: stopping experience collection (100 times)
+[2023-06-29 13:51:31,099][1319062] Signal inference workers to resume experience collection... (100 times)
+[2023-06-29 13:51:31,100][1319082] InferenceWorker_p0-w0: resuming experience collection (100 times)
+[2023-06-29 13:51:32,145][1319082] Updated weights for policy 0, policy_version 114 (0.0018)
+[2023-06-29 13:51:33,756][1318814] Fps is (10 sec: 20480.8, 60 sec: 8328.6, 300 sec: 3223.9). Total num frames: 499712. Throughput: 0: 12990.0. Samples: 584550. Policy #0 lag: (min: 31.0, avg: 46.8, max: 82.0)
+[2023-06-29 13:51:33,757][1318814] Avg episode reward: [(0, '-2.983')]
+[2023-06-29 13:51:33,761][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000122_499712.pth...
+[2023-06-29 13:51:33,844][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000072_294912.pth
+[2023-06-29 13:51:34,595][1319082] Updated weights for policy 0, policy_version 124 (0.0022)
+[2023-06-29 13:51:36,724][1319082] Updated weights for policy 0, policy_version 136 (0.0021)
+[2023-06-29 13:51:38,479][1319082] Updated weights for policy 0, policy_version 146 (0.0026)
+[2023-06-29 13:51:38,756][1318814] Fps is (10 sec: 22937.7, 60 sec: 10035.2, 300 sec: 3763.2). Total num frames: 602112. Throughput: 0: 15799.1. Samples: 742340. Policy #0 lag: (min: 4.0, avg: 21.9, max: 54.0)
+[2023-06-29 13:51:38,757][1318814] Avg episode reward: [(0, '-2.691')]
+[2023-06-29 13:51:39,010][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000149_610304.pth...
+[2023-06-29 13:51:39,091][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000092_376832.pth
+[2023-06-29 13:51:39,095][1319062] Saving new best policy, reward=-2.691!
+[2023-06-29 13:51:40,400][1319082] Updated weights for policy 0, policy_version 158 (0.0024)
+[2023-06-29 13:51:40,404][1319062] Signal inference workers to stop experience collection... (150 times)
+[2023-06-29 13:51:40,439][1319082] InferenceWorker_p0-w0: stopping experience collection (150 times)
+[2023-06-29 13:51:40,533][1319062] Signal inference workers to resume experience collection... (150 times)
+[2023-06-29 13:51:40,754][1319082] InferenceWorker_p0-w0: resuming experience collection (150 times)
+[2023-06-29 13:51:41,891][1319082] Updated weights for policy 0, policy_version 169 (0.0016)
+[2023-06-29 13:51:43,757][1318814] Fps is (10 sec: 21298.9, 60 sec: 11878.4, 300 sec: 4319.4). Total num frames: 712704. Throughput: 0: 16535.5. Samples: 783160. Policy #0 lag: (min: 0.0, avg: 38.2, max: 90.0)
+[2023-06-29 13:51:43,757][1318814] Avg episode reward: [(0, '-2.696')]
+[2023-06-29 13:51:43,978][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000176_720896.pth...
+[2023-06-29 13:51:44,047][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000122_499712.pth
+[2023-06-29 13:51:44,414][1319082] Updated weights for policy 0, policy_version 179 (0.0017)
+[2023-06-29 13:51:45,722][1319082] Updated weights for policy 0, policy_version 189 (0.0022)
+[2023-06-29 13:51:47,021][1319082] Updated weights for policy 0, policy_version 199 (0.0016)
+[2023-06-29 13:51:48,453][1319082] Updated weights for policy 0, policy_version 209 (0.0023)
+[2023-06-29 13:51:48,550][1319062] Signal inference workers to stop experience collection... (200 times)
+[2023-06-29 13:51:48,607][1319082] InferenceWorker_p0-w0: stopping experience collection (200 times)
+[2023-06-29 13:51:48,668][1319062] Signal inference workers to resume experience collection... (200 times)
+[2023-06-29 13:51:48,669][1319082] InferenceWorker_p0-w0: resuming experience collection (200 times)
+[2023-06-29 13:51:48,757][1318814] Fps is (10 sec: 26213.8, 60 sec: 14404.2, 300 sec: 5083.9). Total num frames: 864256. Throughput: 0: 19553.4. Samples: 963610. Policy #0 lag: (min: 24.0, avg: 44.1, max: 75.0)
+[2023-06-29 13:51:48,757][1318814] Avg episode reward: [(0, '-2.696')]
+[2023-06-29 13:51:48,970][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000213_872448.pth...
+[2023-06-29 13:51:49,041][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000149_610304.pth
+[2023-06-29 13:51:49,987][1319082] Updated weights for policy 0, policy_version 220 (0.0017)
+[2023-06-29 13:51:52,218][1319082] Updated weights for policy 0, policy_version 230 (0.0018)
+[2023-06-29 13:51:53,534][1319082] Updated weights for policy 0, policy_version 240 (0.0017)
+[2023-06-29 13:51:53,757][1318814] Fps is (10 sec: 27443.5, 60 sec: 16452.2, 300 sec: 5640.8). Total num frames: 987136. Throughput: 0: 21373.4. Samples: 1126800. Policy #0 lag: (min: 7.0, avg: 29.2, max: 58.0)
+[2023-06-29 13:51:53,758][1318814] Avg episode reward: [(0, '-2.696')]
+[2023-06-29 13:51:53,909][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000243_995328.pth...
+[2023-06-29 13:51:53,981][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000176_720896.pth
+[2023-06-29 13:51:54,850][1319082] Updated weights for policy 0, policy_version 250 (0.0014)
+[2023-06-29 13:51:56,094][1319082] Updated weights for policy 0, policy_version 260 (0.0015)
+[2023-06-29 13:51:56,355][1319062] Signal inference workers to stop experience collection... (250 times)
+[2023-06-29 13:51:56,394][1319082] InferenceWorker_p0-w0: stopping experience collection (250 times)
+[2023-06-29 13:51:56,470][1319062] Signal inference workers to resume experience collection... (250 times)
+[2023-06-29 13:51:56,471][1319082] InferenceWorker_p0-w0: resuming experience collection (250 times)
+[2023-06-29 13:51:57,347][1319082] Updated weights for policy 0, policy_version 270 (0.0015)
+[2023-06-29 13:51:58,756][1318814] Fps is (10 sec: 25805.3, 60 sec: 18227.2, 300 sec: 6235.0). Total num frames: 1122304. Throughput: 0: 21557.3. Samples: 1203070. Policy #0 lag: (min: 0.0, avg: 37.7, max: 82.0)
+[2023-06-29 13:51:58,757][1318814] Avg episode reward: [(0, '-2.696')]
+[2023-06-29 13:51:58,915][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000276_1130496.pth...
+[2023-06-29 13:51:58,989][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000213_872448.pth
+[2023-06-29 13:51:59,500][1319082] Updated weights for policy 0, policy_version 280 (0.0018)
+[2023-06-29 13:52:00,776][1319082] Updated weights for policy 0, policy_version 290 (0.0014)
+[2023-06-29 13:52:02,028][1319082] Updated weights for policy 0, policy_version 300 (0.0017)
+[2023-06-29 13:52:03,384][1319082] Updated weights for policy 0, policy_version 310 (0.0018)
+[2023-06-29 13:52:03,756][1318814] Fps is (10 sec: 29491.8, 60 sec: 19933.9, 300 sec: 6930.0). Total num frames: 1282048. Throughput: 0: 23409.0. Samples: 1375010. Policy #0 lag: (min: 25.0, avg: 46.4, max: 74.0)
+[2023-06-29 13:52:03,757][1318814] Avg episode reward: [(0, '-2.173')]
+[2023-06-29 13:52:03,763][1319062] Signal inference workers to stop experience collection... (300 times)
+[2023-06-29 13:52:03,797][1319082] InferenceWorker_p0-w0: stopping experience collection (300 times)
+[2023-06-29 13:52:03,880][1319062] Signal inference workers to resume experience collection... (300 times)
+[2023-06-29 13:52:03,881][1319082] InferenceWorker_p0-w0: resuming experience collection (300 times)
+[2023-06-29 13:52:03,882][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000314_1286144.pth...
+[2023-06-29 13:52:03,953][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000243_995328.pth
+[2023-06-29 13:52:04,082][1319062] Saving new best policy, reward=-2.173!
+[2023-06-29 13:52:04,804][1319082] Updated weights for policy 0, policy_version 320 (0.0016)
+[2023-06-29 13:52:06,847][1319082] Updated weights for policy 0, policy_version 330 (0.0021)
+[2023-06-29 13:52:08,113][1319082] Updated weights for policy 0, policy_version 340 (0.0017)
+[2023-06-29 13:52:08,757][1318814] Fps is (10 sec: 29080.7, 60 sec: 22050.1, 300 sec: 7437.5). Total num frames: 1413120. Throughput: 0: 25349.4. Samples: 1544140. Policy #0 lag: (min: 9.0, avg: 30.3, max: 59.0)
+[2023-06-29 13:52:08,758][1318814] Avg episode reward: [(0, '-2.160')]
+[2023-06-29 13:52:08,975][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000347_1421312.pth...
+[2023-06-29 13:52:09,050][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000276_1130496.pth
+[2023-06-29 13:52:09,054][1319062] Saving new best policy, reward=-2.160!
+[2023-06-29 13:52:09,479][1319082] Updated weights for policy 0, policy_version 350 (0.0015)
+[2023-06-29 13:52:10,707][1319082] Updated weights for policy 0, policy_version 360 (0.0014)
+[2023-06-29 13:52:11,321][1319062] Signal inference workers to stop experience collection... (350 times)
+[2023-06-29 13:52:11,357][1319082] InferenceWorker_p0-w0: stopping experience collection (350 times)
+[2023-06-29 13:52:11,435][1319062] Signal inference workers to resume experience collection... (350 times)
+[2023-06-29 13:52:11,435][1319082] InferenceWorker_p0-w0: resuming experience collection (350 times)
+[2023-06-29 13:52:11,929][1319082] Updated weights for policy 0, policy_version 370 (0.0015)
+[2023-06-29 13:52:13,757][1318814] Fps is (10 sec: 26623.2, 60 sec: 23893.3, 300 sec: 7939.9). Total num frames: 1548288. Throughput: 0: 25369.9. Samples: 1622670. Policy #0 lag: (min: 0.0, avg: 35.8, max: 77.0)
+[2023-06-29 13:52:13,758][1318814] Avg episode reward: [(0, '-2.160')]
+[2023-06-29 13:52:13,966][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000380_1556480.pth...
+[2023-06-29 13:52:13,968][1319082] Updated weights for policy 0, policy_version 380 (0.0019)
+[2023-06-29 13:52:14,061][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000314_1286144.pth
+[2023-06-29 13:52:15,311][1319082] Updated weights for policy 0, policy_version 390 (0.0014)
+[2023-06-29 13:52:16,571][1319082] Updated weights for policy 0, policy_version 400 (0.0014)
+[2023-06-29 13:52:17,828][1319082] Updated weights for policy 0, policy_version 410 (0.0015)
+[2023-06-29 13:52:18,619][1319062] Signal inference workers to stop experience collection... (400 times)
+[2023-06-29 13:52:18,662][1319082] InferenceWorker_p0-w0: stopping experience collection (400 times)
+[2023-06-29 13:52:18,751][1319062] Signal inference workers to resume experience collection... (400 times)
+[2023-06-29 13:52:18,751][1319082] InferenceWorker_p0-w0: resuming experience collection (400 times)
+[2023-06-29 13:52:18,756][1318814] Fps is (10 sec: 29492.0, 60 sec: 24849.1, 300 sec: 8540.2). Total num frames: 1708032. Throughput: 0: 26926.5. Samples: 1796240. Policy #0 lag: (min: 26.0, avg: 48.7, max: 77.0)
+[2023-06-29 13:52:18,757][1318814] Avg episode reward: [(0, '-2.160')]
+[2023-06-29 13:52:19,006][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000419_1716224.pth...
+[2023-06-29 13:52:19,076][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000347_1421312.pth
+[2023-06-29 13:52:19,191][1319082] Updated weights for policy 0, policy_version 420 (0.0015)
+[2023-06-29 13:52:21,292][1319082] Updated weights for policy 0, policy_version 430 (0.0018)
+[2023-06-29 13:52:22,539][1319082] Updated weights for policy 0, policy_version 440 (0.0014)
+[2023-06-29 13:52:23,756][1318814] Fps is (10 sec: 29082.0, 60 sec: 25736.7, 300 sec: 8971.2). Total num frames: 1839104. Throughput: 0: 27227.8. Samples: 1967590. Policy #0 lag: (min: 9.0, avg: 31.5, max: 60.0)
+[2023-06-29 13:52:23,757][1318814] Avg episode reward: [(0, '-2.160')]
+[2023-06-29 13:52:23,786][1319082] Updated weights for policy 0, policy_version 450 (0.0015)
+[2023-06-29 13:52:23,915][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000451_1847296.pth...
+[2023-06-29 13:52:23,992][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000380_1556480.pth
+[2023-06-29 13:52:25,106][1319082] Updated weights for policy 0, policy_version 460 (0.0014)
+[2023-06-29 13:52:26,112][1319062] Signal inference workers to stop experience collection... (450 times)
+[2023-06-29 13:52:26,146][1319082] InferenceWorker_p0-w0: stopping experience collection (450 times)
+[2023-06-29 13:52:26,233][1319062] Signal inference workers to resume experience collection... (450 times)
+[2023-06-29 13:52:26,233][1319082] InferenceWorker_p0-w0: resuming experience collection (450 times)
+[2023-06-29 13:52:26,363][1319082] Updated weights for policy 0, policy_version 470 (0.0014)
+[2023-06-29 13:52:28,477][1319082] Updated weights for policy 0, policy_version 480 (0.0020)
+[2023-06-29 13:52:28,757][1318814] Fps is (10 sec: 26622.6, 60 sec: 26692.0, 300 sec: 9401.3). Total num frames: 1974272. Throughput: 0: 27928.7. Samples: 2039960. Policy #0 lag: (min: 0.0, avg: 38.0, max: 82.0)
+[2023-06-29 13:52:28,759][1318814] Avg episode reward: [(0, '-1.577')]
+[2023-06-29 13:52:28,978][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000484_1982464.pth...
+[2023-06-29 13:52:29,050][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000419_1716224.pth
+[2023-06-29 13:52:29,054][1319062] Saving new best policy, reward=-1.577!
+[2023-06-29 13:52:29,847][1319082] Updated weights for policy 0, policy_version 490 (0.0014)
+[2023-06-29 13:52:31,089][1319082] Updated weights for policy 0, policy_version 500 (0.0014)
+[2023-06-29 13:52:32,318][1319082] Updated weights for policy 0, policy_version 510 (0.0014)
+[2023-06-29 13:52:33,557][1319082] Updated weights for policy 0, policy_version 520 (0.0017)
+[2023-06-29 13:52:33,560][1319062] Signal inference workers to stop experience collection... (500 times)
+[2023-06-29 13:52:33,600][1319082] InferenceWorker_p0-w0: stopping experience collection (500 times)
+[2023-06-29 13:52:33,675][1319062] Signal inference workers to resume experience collection... (500 times)
+[2023-06-29 13:52:33,676][1319082] InferenceWorker_p0-w0: resuming experience collection (500 times)
+[2023-06-29 13:52:33,757][1318814] Fps is (10 sec: 29490.4, 60 sec: 27238.3, 300 sec: 9925.6). Total num frames: 2134016. Throughput: 0: 27835.5. Samples: 2216210. Policy #0 lag: (min: 24.0, avg: 46.7, max: 75.0)
+[2023-06-29 13:52:33,757][1318814] Avg episode reward: [(0, '-1.577')]
+[2023-06-29 13:52:33,826][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000522_2138112.pth...
+[2023-06-29 13:52:33,904][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000451_1847296.pth
+[2023-06-29 13:52:35,706][1319082] Updated weights for policy 0, policy_version 530 (0.0019)
+[2023-06-29 13:52:36,960][1319082] Updated weights for policy 0, policy_version 540 (0.0014)
+[2023-06-29 13:52:38,220][1319082] Updated weights for policy 0, policy_version 550 (0.0016)
+[2023-06-29 13:52:38,756][1318814] Fps is (10 sec: 29492.7, 60 sec: 27784.5, 300 sec: 10314.5). Total num frames: 2269184. Throughput: 0: 28108.0. Samples: 2391660. Policy #0 lag: (min: 10.0, avg: 31.6, max: 59.0)
+[2023-06-29 13:52:38,757][1318814] Avg episode reward: [(0, '-1.577')]
+[2023-06-29 13:52:38,964][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000556_2277376.pth...
+[2023-06-29 13:52:39,037][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000484_1982464.pth
+[2023-06-29 13:52:39,522][1319082] Updated weights for policy 0, policy_version 560 (0.0014)
+[2023-06-29 13:52:40,791][1319082] Updated weights for policy 0, policy_version 570 (0.0016)
+[2023-06-29 13:52:42,179][1319062] Signal inference workers to stop experience collection... (550 times)
+[2023-06-29 13:52:42,210][1319082] InferenceWorker_p0-w0: stopping experience collection (550 times)
+[2023-06-29 13:52:42,296][1319062] Signal inference workers to resume experience collection... (550 times)
+[2023-06-29 13:52:42,296][1319082] InferenceWorker_p0-w0: resuming experience collection (550 times)
+[2023-06-29 13:52:42,935][1319082] Updated weights for policy 0, policy_version 580 (0.0018)
+[2023-06-29 13:52:43,757][1318814] Fps is (10 sec: 26623.6, 60 sec: 28125.8, 300 sec: 10667.8). Total num frames: 2400256. Throughput: 0: 28050.6. Samples: 2465360. Policy #0 lag: (min: 1.0, avg: 21.5, max: 51.0)
+[2023-06-29 13:52:43,758][1318814] Avg episode reward: [(0, '-1.577')]
+[2023-06-29 13:52:43,933][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000588_2408448.pth...
+[2023-06-29 13:52:44,011][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000522_2138112.pth
+[2023-06-29 13:52:44,244][1319082] Updated weights for policy 0, policy_version 590 (0.0014)
+[2023-06-29 13:52:45,510][1319082] Updated weights for policy 0, policy_version 600 (0.0016)
+[2023-06-29 13:52:46,757][1319082] Updated weights for policy 0, policy_version 610 (0.0017)
+[2023-06-29 13:52:48,269][1319082] Updated weights for policy 0, policy_version 620 (0.0019)
+[2023-06-29 13:52:48,756][1318814] Fps is (10 sec: 27852.9, 60 sec: 28057.7, 300 sec: 11077.0). Total num frames: 2547712. Throughput: 0: 28025.7. Samples: 2636170. Policy #0 lag: (min: 17.0, avg: 45.9, max: 80.0)
+[2023-06-29 13:52:48,757][1318814] Avg episode reward: [(0, '-1.153')]
+[2023-06-29 13:52:48,758][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000622_2547712.pth...
+[2023-06-29 13:52:48,829][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000556_2277376.pth
+[2023-06-29 13:52:48,833][1319062] Saving new best policy, reward=-1.153!
+[2023-06-29 13:52:50,087][1319062] Signal inference workers to stop experience collection... (600 times)
+[2023-06-29 13:52:50,126][1319082] InferenceWorker_p0-w0: stopping experience collection (600 times)
+[2023-06-29 13:52:50,202][1319062] Signal inference workers to resume experience collection... (600 times)
+[2023-06-29 13:52:50,203][1319082] InferenceWorker_p0-w0: resuming experience collection (600 times)
+[2023-06-29 13:52:50,583][1319082] Updated weights for policy 0, policy_version 630 (0.0018)
+[2023-06-29 13:52:51,818][1319082] Updated weights for policy 0, policy_version 640 (0.0014)
+[2023-06-29 13:52:53,055][1319082] Updated weights for policy 0, policy_version 650 (0.0019)
+[2023-06-29 13:52:53,757][1318814] Fps is (10 sec: 28263.1, 60 sec: 28262.3, 300 sec: 11416.5). Total num frames: 2682880. Throughput: 0: 27941.0. Samples: 2801480. Policy #0 lag: (min: 10.0, avg: 32.2, max: 60.0)
+[2023-06-29 13:52:53,757][1318814] Avg episode reward: [(0, '-1.110')]
+[2023-06-29 13:52:53,915][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000657_2691072.pth...
+[2023-06-29 13:52:53,990][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000588_2408448.pth
+[2023-06-29 13:52:53,994][1319062] Saving new best policy, reward=-1.110!
+[2023-06-29 13:52:54,403][1319082] Updated weights for policy 0, policy_version 660 (0.0016)
+[2023-06-29 13:52:55,637][1319082] Updated weights for policy 0, policy_version 670 (0.0015)
+[2023-06-29 13:52:57,602][1319062] Signal inference workers to stop experience collection... (650 times)
+[2023-06-29 13:52:57,635][1319082] InferenceWorker_p0-w0: stopping experience collection (650 times)
+[2023-06-29 13:52:57,717][1319062] Signal inference workers to resume experience collection... (650 times)
+[2023-06-29 13:52:57,717][1319082] InferenceWorker_p0-w0: resuming experience collection (650 times)
+[2023-06-29 13:52:57,846][1319082] Updated weights for policy 0, policy_version 680 (0.0033)
+[2023-06-29 13:52:58,756][1318814] Fps is (10 sec: 26624.2, 60 sec: 28194.2, 300 sec: 11724.8). Total num frames: 2813952. Throughput: 0: 27868.8. Samples: 2876760. Policy #0 lag: (min: 1.0, avg: 21.6, max: 52.0)
+[2023-06-29 13:52:58,757][1318814] Avg episode reward: [(0, '-1.110')]
+[2023-06-29 13:52:58,985][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000689_2822144.pth...
+[2023-06-29 13:52:59,055][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000622_2547712.pth
+[2023-06-29 13:52:59,180][1319082] Updated weights for policy 0, policy_version 690 (0.0015)
+[2023-06-29 13:53:00,434][1319082] Updated weights for policy 0, policy_version 700 (0.0015)
+[2023-06-29 13:53:01,684][1319082] Updated weights for policy 0, policy_version 710 (0.0015)
+[2023-06-29 13:53:02,940][1319082] Updated weights for policy 0, policy_version 720 (0.0016)
+[2023-06-29 13:53:03,756][1318814] Fps is (10 sec: 27443.4, 60 sec: 27920.9, 300 sec: 12070.7). Total num frames: 2957312. Throughput: 0: 27899.3. Samples: 3051710. Policy #0 lag: (min: 28.0, avg: 50.7, max: 78.0)
+[2023-06-29 13:53:03,757][1318814] Avg episode reward: [(0, '-1.110')]
+[2023-06-29 13:53:03,853][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000723_2961408.pth...
+[2023-06-29 13:53:03,928][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000657_2691072.pth
+[2023-06-29 13:53:05,012][1319082] Updated weights for policy 0, policy_version 730 (0.0021)
+[2023-06-29 13:53:05,144][1319062] Signal inference workers to stop experience collection... (700 times)
+[2023-06-29 13:53:05,178][1319082] InferenceWorker_p0-w0: stopping experience collection (700 times)
+[2023-06-29 13:53:05,259][1319062] Signal inference workers to resume experience collection... (700 times)
+[2023-06-29 13:53:05,260][1319082] InferenceWorker_p0-w0: resuming experience collection (700 times)
+[2023-06-29 13:53:06,276][1319082] Updated weights for policy 0, policy_version 740 (0.0019)
+[2023-06-29 13:53:07,546][1319082] Updated weights for policy 0, policy_version 750 (0.0019)
+[2023-06-29 13:53:08,757][1318814] Fps is (10 sec: 29490.4, 60 sec: 28262.4, 300 sec: 12435.4). Total num frames: 3108864. Throughput: 0: 27928.8. Samples: 3224390. Policy #0 lag: (min: 15.0, avg: 37.9, max: 66.0)
+[2023-06-29 13:53:08,757][1318814] Avg episode reward: [(0, '-1.110')]
+[2023-06-29 13:53:08,804][1319082] Updated weights for policy 0, policy_version 760 (0.0014)
+[2023-06-29 13:53:08,928][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000761_3117056.pth...
+[2023-06-29 13:53:09,011][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000689_2822144.pth
+[2023-06-29 13:53:10,157][1319082] Updated weights for policy 0, policy_version 770 (0.0014)
+[2023-06-29 13:53:12,265][1319082] Updated weights for policy 0, policy_version 780 (0.0024)
+[2023-06-29 13:53:12,653][1319062] Signal inference workers to stop experience collection... (750 times)
+[2023-06-29 13:53:12,694][1319082] InferenceWorker_p0-w0: stopping experience collection (750 times)
+[2023-06-29 13:53:12,774][1319062] Signal inference workers to resume experience collection... (750 times)
+[2023-06-29 13:53:12,774][1319082] InferenceWorker_p0-w0: resuming experience collection (750 times)
+[2023-06-29 13:53:13,532][1319082] Updated weights for policy 0, policy_version 790 (0.0015)
+[2023-06-29 13:53:13,757][1318814] Fps is (10 sec: 28262.6, 60 sec: 28194.2, 300 sec: 12705.6). Total num frames: 3239936. Throughput: 0: 28241.6. Samples: 3310820. Policy #0 lag: (min: 3.0, avg: 26.0, max: 57.0)
+[2023-06-29 13:53:13,757][1318814] Avg episode reward: [(0, '-0.803')]
+[2023-06-29 13:53:13,913][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000793_3248128.pth...
+[2023-06-29 13:53:13,986][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000723_2961408.pth
+[2023-06-29 13:53:13,990][1319062] Saving new best policy, reward=-0.803!
+[2023-06-29 13:53:14,910][1319082] Updated weights for policy 0, policy_version 800 (0.0016)
+[2023-06-29 13:53:16,182][1319082] Updated weights for policy 0, policy_version 810 (0.0014)
+[2023-06-29 13:53:17,445][1319082] Updated weights for policy 0, policy_version 820 (0.0014)
+[2023-06-29 13:53:18,756][1318814] Fps is (10 sec: 26214.9, 60 sec: 27716.3, 300 sec: 12965.4). Total num frames: 3371008. Throughput: 0: 27846.2. Samples: 3469280. Policy #0 lag: (min: 0.0, avg: 41.6, max: 69.0)
+[2023-06-29 13:53:18,757][1318814] Avg episode reward: [(0, '-0.779')]
+[2023-06-29 13:53:18,847][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000824_3375104.pth...
+[2023-06-29 13:53:18,916][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000761_3117056.pth
+[2023-06-29 13:53:18,920][1319062] Saving new best policy, reward=-0.779!
+[2023-06-29 13:53:19,742][1319082] Updated weights for policy 0, policy_version 830 (0.0023)
+[2023-06-29 13:53:20,504][1319062] Signal inference workers to stop experience collection... (800 times)
+[2023-06-29 13:53:20,542][1319082] InferenceWorker_p0-w0: stopping experience collection (800 times)
+[2023-06-29 13:53:20,619][1319062] Signal inference workers to resume experience collection... (800 times)
+[2023-06-29 13:53:20,620][1319082] InferenceWorker_p0-w0: resuming experience collection (800 times)
+[2023-06-29 13:53:21,004][1319082] Updated weights for policy 0, policy_version 840 (0.0016)
+[2023-06-29 13:53:22,264][1319082] Updated weights for policy 0, policy_version 850 (0.0014)
+[2023-06-29 13:53:23,523][1319082] Updated weights for policy 0, policy_version 860 (0.0015)
+[2023-06-29 13:53:23,756][1318814] Fps is (10 sec: 28672.1, 60 sec: 28125.9, 300 sec: 13308.1). Total num frames: 3526656. Throughput: 0: 27765.8. Samples: 3641120. Policy #0 lag: (min: 3.0, avg: 32.0, max: 73.0)
+[2023-06-29 13:53:23,757][1318814] Avg episode reward: [(0, '-0.779')]
+[2023-06-29 13:53:23,897][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000863_3534848.pth...
+[2023-06-29 13:53:23,970][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000793_3248128.pth
+[2023-06-29 13:53:24,840][1319082] Updated weights for policy 0, policy_version 870 (0.0014)
+[2023-06-29 13:53:26,903][1319082] Updated weights for policy 0, policy_version 880 (0.0020)
+[2023-06-29 13:53:27,899][1319062] Signal inference workers to stop experience collection... (850 times)
+[2023-06-29 13:53:27,933][1319082] InferenceWorker_p0-w0: stopping experience collection (850 times)
+[2023-06-29 13:53:28,016][1319062] Signal inference workers to resume experience collection... (850 times)
+[2023-06-29 13:53:28,017][1319082] InferenceWorker_p0-w0: resuming experience collection (850 times)
+[2023-06-29 13:53:28,142][1319082] Updated weights for policy 0, policy_version 890 (0.0014)
+[2023-06-29 13:53:28,756][1318814] Fps is (10 sec: 29081.8, 60 sec: 28126.1, 300 sec: 13562.3). Total num frames: 3661824. Throughput: 0: 28245.9. Samples: 3736410. Policy #0 lag: (min: 1.0, avg: 22.0, max: 50.0)
+[2023-06-29 13:53:28,757][1318814] Avg episode reward: [(0, '-0.779')]
+[2023-06-29 13:53:28,894][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000896_3670016.pth...
+[2023-06-29 13:53:28,965][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000824_3375104.pth
+[2023-06-29 13:53:29,450][1319082] Updated weights for policy 0, policy_version 900 (0.0015)
+[2023-06-29 13:53:30,703][1319082] Updated weights for policy 0, policy_version 910 (0.0014)
+[2023-06-29 13:53:31,965][1319082] Updated weights for policy 0, policy_version 920 (0.0015)
+[2023-06-29 13:53:33,756][1318814] Fps is (10 sec: 26623.7, 60 sec: 27648.1, 300 sec: 13792.3). Total num frames: 3792896. Throughput: 0: 27822.6. Samples: 3888190. Policy #0 lag: (min: 21.0, avg: 46.6, max: 73.0)
+[2023-06-29 13:53:33,757][1318814] Avg episode reward: [(0, '-0.331')]
+[2023-06-29 13:53:33,914][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000928_3801088.pth...
+[2023-06-29 13:53:34,004][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000863_3534848.pth
+[2023-06-29 13:53:34,010][1319062] Saving new best policy, reward=-0.331!
+[2023-06-29 13:53:34,318][1319082] Updated weights for policy 0, policy_version 930 (0.0016)
+[2023-06-29 13:53:35,578][1319082] Updated weights for policy 0, policy_version 940 (0.0014)
+[2023-06-29 13:53:35,582][1319062] Signal inference workers to stop experience collection... (900 times)
+[2023-06-29 13:53:35,616][1319082] InferenceWorker_p0-w0: stopping experience collection (900 times)
+[2023-06-29 13:53:35,701][1319062] Signal inference workers to resume experience collection... (900 times)
+[2023-06-29 13:53:35,701][1319082] InferenceWorker_p0-w0: resuming experience collection (900 times)
+[2023-06-29 13:53:36,839][1319082] Updated weights for policy 0, policy_version 950 (0.0016)
+[2023-06-29 13:53:38,082][1319082] Updated weights for policy 0, policy_version 960 (0.0017)
+[2023-06-29 13:53:38,756][1318814] Fps is (10 sec: 29081.5, 60 sec: 28057.6, 300 sec: 14116.6). Total num frames: 3952640. Throughput: 0: 27954.6. Samples: 4059430. Policy #0 lag: (min: 4.0, avg: 28.8, max: 53.0)
+[2023-06-29 13:53:38,757][1318814] Avg episode reward: [(0, '-0.299')]
+[2023-06-29 13:53:38,946][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000967_3960832.pth...
+[2023-06-29 13:53:39,020][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000896_3670016.pth
+[2023-06-29 13:53:39,024][1319062] Saving new best policy, reward=-0.299!
+[2023-06-29 13:53:39,447][1319082] Updated weights for policy 0, policy_version 970 (0.0015)
+[2023-06-29 13:53:41,522][1319082] Updated weights for policy 0, policy_version 980 (0.0020)
+[2023-06-29 13:53:42,773][1319082] Updated weights for policy 0, policy_version 990 (0.0014)
+[2023-06-29 13:53:43,032][1319062] Signal inference workers to stop experience collection... (950 times)
+[2023-06-29 13:53:43,066][1319082] InferenceWorker_p0-w0: stopping experience collection (950 times)
+[2023-06-29 13:53:43,147][1319062] Signal inference workers to resume experience collection... (950 times)
+[2023-06-29 13:53:43,148][1319082] InferenceWorker_p0-w0: resuming experience collection (950 times)
+[2023-06-29 13:53:43,756][1318814] Fps is (10 sec: 29081.8, 60 sec: 28057.8, 300 sec: 14328.8). Total num frames: 4083712. Throughput: 0: 28417.7. Samples: 4155560. Policy #0 lag: (min: 4.0, avg: 26.9, max: 60.0)
+[2023-06-29 13:53:43,757][1318814] Avg episode reward: [(0, '-0.293')]
+[2023-06-29 13:53:43,906][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000000999_4091904.pth...
+[2023-06-29 13:53:43,975][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000928_3801088.pth
+[2023-06-29 13:53:43,980][1319062] Saving new best policy, reward=-0.293!
+[2023-06-29 13:53:44,153][1319082] Updated weights for policy 0, policy_version 1000 (0.0015)
+[2023-06-29 13:53:45,415][1319082] Updated weights for policy 0, policy_version 1010 (0.0014)
+[2023-06-29 13:53:46,650][1319082] Updated weights for policy 0, policy_version 1020 (0.0014)
+[2023-06-29 13:53:48,756][1318814] Fps is (10 sec: 26214.4, 60 sec: 27784.5, 300 sec: 14533.7). Total num frames: 4214784. Throughput: 0: 27908.5. Samples: 4307590. Policy #0 lag: (min: 0.0, avg: 23.4, max: 51.0)
+[2023-06-29 13:53:48,757][1318814] Avg episode reward: [(0, '-0.293')]
+[2023-06-29 13:53:48,879][1319082] Updated weights for policy 0, policy_version 1030 (0.0022)
+[2023-06-29 13:53:49,000][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001031_4222976.pth...
+[2023-06-29 13:53:49,074][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000967_3960832.pth
+[2023-06-29 13:53:50,187][1319082] Updated weights for policy 0, policy_version 1040 (0.0014)
+[2023-06-29 13:53:50,694][1319062] Signal inference workers to stop experience collection... (1000 times)
+[2023-06-29 13:53:50,726][1319082] InferenceWorker_p0-w0: stopping experience collection (1000 times)
+[2023-06-29 13:53:50,812][1319062] Signal inference workers to resume experience collection... (1000 times)
+[2023-06-29 13:53:50,812][1319082] InferenceWorker_p0-w0: resuming experience collection (1000 times)
+[2023-06-29 13:53:51,442][1319082] Updated weights for policy 0, policy_version 1050 (0.0014)
+[2023-06-29 13:53:52,703][1319082] Updated weights for policy 0, policy_version 1060 (0.0016)
+[2023-06-29 13:53:53,757][1318814] Fps is (10 sec: 29081.5, 60 sec: 28194.2, 300 sec: 14828.9). Total num frames: 4374528. Throughput: 0: 27827.2. Samples: 4476610. Policy #0 lag: (min: 23.0, avg: 48.2, max: 76.0)
+[2023-06-29 13:53:53,757][1318814] Avg episode reward: [(0, '-0.293')]
+[2023-06-29 13:53:53,958][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001070_4382720.pth...
+[2023-06-29 13:53:53,960][1319082] Updated weights for policy 0, policy_version 1070 (0.0015)
+[2023-06-29 13:53:54,032][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000000999_4091904.pth
+[2023-06-29 13:53:56,060][1319082] Updated weights for policy 0, policy_version 1080 (0.0020)
+[2023-06-29 13:53:57,309][1319082] Updated weights for policy 0, policy_version 1090 (0.0016)
+[2023-06-29 13:53:58,068][1319062] Signal inference workers to stop experience collection... (1050 times)
+[2023-06-29 13:53:58,109][1319082] InferenceWorker_p0-w0: stopping experience collection (1050 times)
+[2023-06-29 13:53:58,186][1319062] Signal inference workers to resume experience collection... (1050 times)
+[2023-06-29 13:53:58,187][1319082] InferenceWorker_p0-w0: resuming experience collection (1050 times)
+[2023-06-29 13:53:58,565][1319082] Updated weights for policy 0, policy_version 1100 (0.0015)
+[2023-06-29 13:53:58,757][1318814] Fps is (10 sec: 29489.9, 60 sec: 28262.2, 300 sec: 15287.1). Total num frames: 4509696. Throughput: 0: 28069.1. Samples: 4573940. Policy #0 lag: (min: 4.0, avg: 25.3, max: 55.0)
+[2023-06-29 13:53:58,758][1318814] Avg episode reward: [(0, '-0.189')]
+[2023-06-29 13:53:58,946][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001103_4517888.pth...
+[2023-06-29 13:53:59,022][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001031_4222976.pth
+[2023-06-29 13:53:59,026][1319062] Saving new best policy, reward=-0.189!
+[2023-06-29 13:53:59,947][1319082] Updated weights for policy 0, policy_version 1110 (0.0015)
+[2023-06-29 13:54:01,202][1319082] Updated weights for policy 0, policy_version 1120 (0.0014)
+[2023-06-29 13:54:03,311][1319082] Updated weights for policy 0, policy_version 1130 (0.0024)
+[2023-06-29 13:54:03,756][1318814] Fps is (10 sec: 26624.3, 60 sec: 28057.7, 300 sec: 15731.4). Total num frames: 4640768. Throughput: 0: 28123.8. Samples: 4734850. Policy #0 lag: (min: 0.0, avg: 34.3, max: 58.0)
+[2023-06-29 13:54:03,757][1318814] Avg episode reward: [(0, '-0.182')]
+[2023-06-29 13:54:03,933][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001135_4648960.pth...
+[2023-06-29 13:54:04,010][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001070_4382720.pth
+[2023-06-29 13:54:04,014][1319062] Saving new best policy, reward=-0.182!
+[2023-06-29 13:54:04,684][1319082] Updated weights for policy 0, policy_version 1140 (0.0014)
+[2023-06-29 13:54:05,700][1319062] Signal inference workers to stop experience collection... (1100 times)
+[2023-06-29 13:54:05,735][1319082] InferenceWorker_p0-w0: stopping experience collection (1100 times)
+[2023-06-29 13:54:05,816][1319062] Signal inference workers to resume experience collection... (1100 times)
+[2023-06-29 13:54:05,817][1319082] InferenceWorker_p0-w0: resuming experience collection (1100 times)
+[2023-06-29 13:54:05,942][1319082] Updated weights for policy 0, policy_version 1150 (0.0016)
+[2023-06-29 13:54:07,200][1319082] Updated weights for policy 0, policy_version 1160 (0.0014)
+[2023-06-29 13:54:08,459][1319082] Updated weights for policy 0, policy_version 1170 (0.0016)
+[2023-06-29 13:54:08,757][1318814] Fps is (10 sec: 28671.7, 60 sec: 28125.7, 300 sec: 16259.0). Total num frames: 4796416. Throughput: 0: 27772.4. Samples: 4890890. Policy #0 lag: (min: 23.0, avg: 46.3, max: 73.0)
+[2023-06-29 13:54:08,758][1318814] Avg episode reward: [(0, '-0.177')]
+[2023-06-29 13:54:08,760][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001171_4796416.pth...
+[2023-06-29 13:54:08,830][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001103_4517888.pth
+[2023-06-29 13:54:08,834][1319062] Saving new best policy, reward=-0.177!
+[2023-06-29 13:54:10,632][1319082] Updated weights for policy 0, policy_version 1180 (0.0018)
+[2023-06-29 13:54:11,886][1319082] Updated weights for policy 0, policy_version 1190 (0.0014)
+[2023-06-29 13:54:13,145][1319082] Updated weights for policy 0, policy_version 1200 (0.0014)
+[2023-06-29 13:54:13,279][1319062] Signal inference workers to stop experience collection... (1150 times)
+[2023-06-29 13:54:13,321][1319082] InferenceWorker_p0-w0: stopping experience collection (1150 times)
+[2023-06-29 13:54:13,400][1319062] Signal inference workers to resume experience collection... (1150 times)
+[2023-06-29 13:54:13,400][1319082] InferenceWorker_p0-w0: resuming experience collection (1150 times)
+[2023-06-29 13:54:13,756][1318814] Fps is (10 sec: 29081.4, 60 sec: 28194.1, 300 sec: 16717.2). Total num frames: 4931584. Throughput: 0: 27856.8. Samples: 4989970. Policy #0 lag: (min: 11.0, avg: 34.2, max: 62.0)
+[2023-06-29 13:54:13,757][1318814] Avg episode reward: [(0, '-0.177')]
+[2023-06-29 13:54:13,922][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001206_4939776.pth...
+[2023-06-29 13:54:13,996][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001135_4648960.pth
+[2023-06-29 13:54:14,502][1319082] Updated weights for policy 0, policy_version 1210 (0.0033)
+[2023-06-29 13:54:15,785][1319082] Updated weights for policy 0, policy_version 1220 (0.0023)
+[2023-06-29 13:54:17,921][1319082] Updated weights for policy 0, policy_version 1230 (0.0024)
+[2023-06-29 13:54:18,757][1318814] Fps is (10 sec: 26624.6, 60 sec: 28194.0, 300 sec: 17161.6). Total num frames: 5062656. Throughput: 0: 28249.0. Samples: 5159400. Policy #0 lag: (min: 5.0, avg: 26.8, max: 56.0)
+[2023-06-29 13:54:18,758][1318814] Avg episode reward: [(0, '-0.105')]
+[2023-06-29 13:54:18,972][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001238_5070848.pth...
+[2023-06-29 13:54:19,046][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001171_4796416.pth
+[2023-06-29 13:54:19,050][1319062] Saving new best policy, reward=-0.105!
+[2023-06-29 13:54:19,355][1319082] Updated weights for policy 0, policy_version 1240 (0.0016)
+[2023-06-29 13:54:20,634][1319082] Updated weights for policy 0, policy_version 1250 (0.0025)
+[2023-06-29 13:54:21,145][1319062] Signal inference workers to stop experience collection... (1200 times)
+[2023-06-29 13:54:21,183][1319082] InferenceWorker_p0-w0: stopping experience collection (1200 times)
+[2023-06-29 13:54:21,265][1319062] Signal inference workers to resume experience collection... (1200 times)
+[2023-06-29 13:54:21,266][1319082] InferenceWorker_p0-w0: resuming experience collection (1200 times)
+[2023-06-29 13:54:21,903][1319082] Updated weights for policy 0, policy_version 1260 (0.0017)
+[2023-06-29 13:54:23,202][1319082] Updated weights for policy 0, policy_version 1270 (0.0024)
+[2023-06-29 13:54:23,757][1318814] Fps is (10 sec: 27850.7, 60 sec: 28057.2, 300 sec: 17661.4). Total num frames: 5210112. Throughput: 0: 27837.5. Samples: 5312140. Policy #0 lag: (min: 16.0, avg: 40.2, max: 67.0)
+[2023-06-29 13:54:23,759][1318814] Avg episode reward: [(0, '-0.093')]
+[2023-06-29 13:54:23,765][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001272_5210112.pth...
+[2023-06-29 13:54:23,836][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001206_4939776.pth
+[2023-06-29 13:54:23,840][1319062] Saving new best policy, reward=-0.093!
+[2023-06-29 13:54:25,162][1319082] Updated weights for policy 0, policy_version 1280 (0.0019)
+[2023-06-29 13:54:26,412][1319082] Updated weights for policy 0, policy_version 1290 (0.0015)
+[2023-06-29 13:54:27,661][1319082] Updated weights for policy 0, policy_version 1300 (0.0015)
+[2023-06-29 13:54:28,420][1319062] Signal inference workers to stop experience collection... (1250 times)
+[2023-06-29 13:54:28,455][1319082] InferenceWorker_p0-w0: stopping experience collection (1250 times)
+[2023-06-29 13:54:28,537][1319062] Signal inference workers to resume experience collection... (1250 times)
+[2023-06-29 13:54:28,538][1319082] InferenceWorker_p0-w0: resuming experience collection (1250 times)
+[2023-06-29 13:54:28,756][1318814] Fps is (10 sec: 29492.0, 60 sec: 28262.4, 300 sec: 18161.3). Total num frames: 5357568. Throughput: 0: 27880.9. Samples: 5410200. Policy #0 lag: (min: 7.0, avg: 32.6, max: 65.0)
+[2023-06-29 13:54:28,757][1318814] Avg episode reward: [(0, '-0.093')]
+[2023-06-29 13:54:28,917][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001310_5365760.pth...
+[2023-06-29 13:54:28,918][1319082] Updated weights for policy 0, policy_version 1310 (0.0014)
+[2023-06-29 13:54:28,992][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001238_5070848.pth
+[2023-06-29 13:54:30,268][1319082] Updated weights for policy 0, policy_version 1320 (0.0014)
+[2023-06-29 13:54:32,323][1319082] Updated weights for policy 0, policy_version 1330 (0.0019)
+[2023-06-29 13:54:33,580][1319082] Updated weights for policy 0, policy_version 1340 (0.0014)
+[2023-06-29 13:54:33,756][1318814] Fps is (10 sec: 28264.6, 60 sec: 28330.7, 300 sec: 18619.4). Total num frames: 5492736. Throughput: 0: 28388.9. Samples: 5585090. Policy #0 lag: (min: 3.0, avg: 25.1, max: 56.0)
+[2023-06-29 13:54:33,757][1318814] Avg episode reward: [(0, '-0.091')]
+[2023-06-29 13:54:33,957][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001343_5500928.pth...
+[2023-06-29 13:54:34,028][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001272_5210112.pth
+[2023-06-29 13:54:34,032][1319062] Saving new best policy, reward=-0.091!
+[2023-06-29 13:54:34,952][1319082] Updated weights for policy 0, policy_version 1350 (0.0017)
+[2023-06-29 13:54:36,203][1319082] Updated weights for policy 0, policy_version 1360 (0.0014)
+[2023-06-29 13:54:36,207][1319062] Signal inference workers to stop experience collection... (1300 times)
+[2023-06-29 13:54:36,241][1319082] InferenceWorker_p0-w0: stopping experience collection (1300 times)
+[2023-06-29 13:54:36,329][1319062] Signal inference workers to resume experience collection... (1300 times)
+[2023-06-29 13:54:36,329][1319082] InferenceWorker_p0-w0: resuming experience collection (1300 times)
+[2023-06-29 13:54:37,470][1319082] Updated weights for policy 0, policy_version 1370 (0.0014)
+[2023-06-29 13:54:38,756][1318814] Fps is (10 sec: 27033.2, 60 sec: 27921.0, 300 sec: 19077.6). Total num frames: 5627904. Throughput: 0: 28142.4. Samples: 5743020. Policy #0 lag: (min: 14.0, avg: 40.1, max: 69.0)
+[2023-06-29 13:54:38,757][1318814] Avg episode reward: [(0, '-0.091')]
+[2023-06-29 13:54:38,878][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001375_5632000.pth...
+[2023-06-29 13:54:38,947][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001310_5365760.pth
+[2023-06-29 13:54:39,573][1319082] Updated weights for policy 0, policy_version 1380 (0.0031)
+[2023-06-29 13:54:40,926][1319082] Updated weights for policy 0, policy_version 1390 (0.0015)
+[2023-06-29 13:54:42,177][1319082] Updated weights for policy 0, policy_version 1400 (0.0014)
+[2023-06-29 13:54:43,423][1319082] Updated weights for policy 0, policy_version 1410 (0.0014)
+[2023-06-29 13:54:43,756][1318814] Fps is (10 sec: 29081.6, 60 sec: 28330.7, 300 sec: 19605.3). Total num frames: 5783552. Throughput: 0: 27864.7. Samples: 5827840. Policy #0 lag: (min: 7.0, avg: 34.7, max: 63.0)
+[2023-06-29 13:54:43,757][1318814] Avg episode reward: [(0, '-0.068')]
+[2023-06-29 13:54:43,799][1319062] Signal inference workers to stop experience collection... (1350 times)
+[2023-06-29 13:54:43,835][1319082] InferenceWorker_p0-w0: stopping experience collection (1350 times)
+[2023-06-29 13:54:43,919][1319062] Signal inference workers to resume experience collection... (1350 times)
+[2023-06-29 13:54:43,919][1319082] InferenceWorker_p0-w0: resuming experience collection (1350 times)
+[2023-06-29 13:54:43,920][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001414_5791744.pth...
+[2023-06-29 13:54:43,994][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001343_5500928.pth
+[2023-06-29 13:54:43,998][1319062] Saving new best policy, reward=-0.068!
+[2023-06-29 13:54:44,842][1319082] Updated weights for policy 0, policy_version 1420 (0.0018)
+[2023-06-29 13:54:46,887][1319082] Updated weights for policy 0, policy_version 1430 (0.0018)
+[2023-06-29 13:54:48,142][1319082] Updated weights for policy 0, policy_version 1440 (0.0014)
+[2023-06-29 13:54:48,757][1318814] Fps is (10 sec: 28671.9, 60 sec: 28330.6, 300 sec: 20049.6). Total num frames: 5914624. Throughput: 0: 28099.2. Samples: 5999320. Policy #0 lag: (min: 7.0, avg: 28.5, max: 59.0)
+[2023-06-29 13:54:48,757][1318814] Avg episode reward: [(0, '-0.066')]
+[2023-06-29 13:54:48,941][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001446_5922816.pth...
+[2023-06-29 13:54:49,015][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001375_5632000.pth
+[2023-06-29 13:54:49,019][1319062] Saving new best policy, reward=-0.066!
+[2023-06-29 13:54:49,600][1319082] Updated weights for policy 0, policy_version 1450 (0.0014)
+[2023-06-29 13:54:50,843][1319082] Updated weights for policy 0, policy_version 1460 (0.0013)
+[2023-06-29 13:54:51,927][1319062] Signal inference workers to stop experience collection... (1400 times)
+[2023-06-29 13:54:51,928][1319062] Signal inference workers to resume experience collection... (1400 times)
+[2023-06-29 13:54:51,950][1319082] InferenceWorker_p0-w0: stopping experience collection (1400 times)
+[2023-06-29 13:54:51,950][1319082] InferenceWorker_p0-w0: resuming experience collection (1400 times)
+[2023-06-29 13:54:52,204][1319082] Updated weights for policy 0, policy_version 1470 (0.0020)
+[2023-06-29 13:54:53,756][1318814] Fps is (10 sec: 26214.5, 60 sec: 27852.9, 300 sec: 20493.9). Total num frames: 6045696. Throughput: 0: 28358.8. Samples: 6167020. Policy #0 lag: (min: 1.0, avg: 22.4, max: 52.0)
+[2023-06-29 13:54:53,757][1318814] Avg episode reward: [(0, '-0.064')]
+[2023-06-29 13:54:53,894][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001478_6053888.pth...
+[2023-06-29 13:54:53,966][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001414_5791744.pth
+[2023-06-29 13:54:53,972][1319062] Saving new best policy, reward=-0.064!
+[2023-06-29 13:54:54,271][1319082] Updated weights for policy 0, policy_version 1480 (0.0019)
+[2023-06-29 13:54:55,530][1319082] Updated weights for policy 0, policy_version 1490 (0.0013)
+[2023-06-29 13:54:56,790][1319082] Updated weights for policy 0, policy_version 1500 (0.0014)
+[2023-06-29 13:54:58,058][1319082] Updated weights for policy 0, policy_version 1510 (0.0014)
+[2023-06-29 13:54:58,757][1318814] Fps is (10 sec: 29081.1, 60 sec: 28262.4, 300 sec: 21035.4). Total num frames: 6205440. Throughput: 0: 27904.3. Samples: 6245670. Policy #0 lag: (min: 12.0, avg: 34.8, max: 62.0)
+[2023-06-29 13:54:58,758][1318814] Avg episode reward: [(0, '-0.064')]
+[2023-06-29 13:54:58,820][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001516_6209536.pth...
+[2023-06-29 13:54:58,893][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001446_5922816.pth
+[2023-06-29 13:54:59,604][1319082] Updated weights for policy 0, policy_version 1520 (0.0027)
+[2023-06-29 13:55:00,189][1319062] Signal inference workers to stop experience collection... (1450 times)
+[2023-06-29 13:55:00,220][1319082] InferenceWorker_p0-w0: stopping experience collection (1450 times)
+[2023-06-29 13:55:00,280][1319062] Signal inference workers to resume experience collection... (1450 times)
+[2023-06-29 13:55:00,281][1319082] InferenceWorker_p0-w0: resuming experience collection (1450 times)
+[2023-06-29 13:55:01,287][1319082] Updated weights for policy 0, policy_version 1530 (0.0014)
+[2023-06-29 13:55:02,549][1319082] Updated weights for policy 0, policy_version 1540 (0.0015)
+[2023-06-29 13:55:03,757][1318814] Fps is (10 sec: 29899.7, 60 sec: 28398.8, 300 sec: 21507.5). Total num frames: 6344704. Throughput: 0: 27995.5. Samples: 6419200. Policy #0 lag: (min: 5.0, avg: 29.3, max: 57.0)
+[2023-06-29 13:55:03,758][1318814] Avg episode reward: [(0, '-0.057')]
+[2023-06-29 13:55:03,817][1319082] Updated weights for policy 0, policy_version 1550 (0.0019)
+[2023-06-29 13:55:03,941][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001551_6352896.pth...
+[2023-06-29 13:55:04,016][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001478_6053888.pth
+[2023-06-29 13:55:04,020][1319062] Saving new best policy, reward=-0.057!
+[2023-06-29 13:55:05,188][1319082] Updated weights for policy 0, policy_version 1560 (0.0017)
+[2023-06-29 13:55:06,939][1319082] Updated weights for policy 0, policy_version 1570 (0.0021)
+[2023-06-29 13:55:07,970][1319062] Signal inference workers to stop experience collection... (1500 times)
+[2023-06-29 13:55:07,998][1319082] InferenceWorker_p0-w0: stopping experience collection (1500 times)
+[2023-06-29 13:55:08,060][1319062] Signal inference workers to resume experience collection... (1500 times)
+[2023-06-29 13:55:08,061][1319082] InferenceWorker_p0-w0: resuming experience collection (1500 times)
+[2023-06-29 13:55:08,562][1319082] Updated weights for policy 0, policy_version 1580 (0.0019)
+[2023-06-29 13:55:08,757][1318814] Fps is (10 sec: 27032.6, 60 sec: 27989.2, 300 sec: 21951.7). Total num frames: 6475776. Throughput: 0: 28430.7. Samples: 6591520. Policy #0 lag: (min: 8.0, avg: 37.5, max: 63.0)
+[2023-06-29 13:55:08,759][1318814] Avg episode reward: [(0, '-0.052')]
+[2023-06-29 13:55:08,941][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001583_6483968.pth...
+[2023-06-29 13:55:09,021][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001516_6209536.pth
+[2023-06-29 13:55:09,025][1319062] Saving new best policy, reward=-0.052!
+[2023-06-29 13:55:09,956][1319082] Updated weights for policy 0, policy_version 1590 (0.0017)
+[2023-06-29 13:55:11,203][1319082] Updated weights for policy 0, policy_version 1600 (0.0014)
+[2023-06-29 13:55:12,458][1319082] Updated weights for policy 0, policy_version 1610 (0.0023)
+[2023-06-29 13:55:13,377][1318814] Keyboard interrupt detected in the event loop EvtLoop [Runner_EvtLoop, process=main process 1318814], exiting...
+[2023-06-29 13:55:13,378][1319670] Stopping RolloutWorker_w22...
+[2023-06-29 13:55:13,378][1321191] Stopping RolloutWorker_w66...
+[2023-06-29 13:55:13,378][1321194] Stopping RolloutWorker_w78...
+[2023-06-29 13:55:13,378][1320321] Stopping RolloutWorker_w54...
+[2023-06-29 13:55:13,378][1319670] Loop rollout_proc22_evt_loop terminating...
+[2023-06-29 13:55:13,378][1320019] Stopping RolloutWorker_w30...
+[2023-06-29 13:55:13,378][1321194] Loop rollout_proc78_evt_loop terminating...
+[2023-06-29 13:55:13,378][1320225] Stopping RolloutWorker_w55...
+[2023-06-29 13:55:13,378][1321190] Stopping RolloutWorker_w76...
+[2023-06-29 13:55:13,378][1320157] Stopping RolloutWorker_w52...
+[2023-06-29 13:55:13,378][1320321] Loop rollout_proc54_evt_loop terminating...
+[2023-06-29 13:55:13,378][1321191] Loop rollout_proc66_evt_loop terminating...
+[2023-06-29 13:55:13,378][1319676] Stopping RolloutWorker_w20...
+[2023-06-29 13:55:13,379][1320019] Loop rollout_proc30_evt_loop terminating...
+[2023-06-29 13:55:13,378][1320928] Stopping RolloutWorker_w79...
+[2023-06-29 13:55:13,378][1319084] Stopping RolloutWorker_w7...
+[2023-06-29 13:55:13,378][1319350] Stopping RolloutWorker_w6...
+[2023-06-29 13:55:13,378][1320077] Stopping RolloutWorker_w59...
+[2023-06-29 13:55:13,378][1319954] Stopping RolloutWorker_w47...
+[2023-06-29 13:55:13,378][1319681] Stopping RolloutWorker_w27...
+[2023-06-29 13:55:13,379][1320225] Loop rollout_proc55_evt_loop terminating...
+[2023-06-29 13:55:13,378][1319883] Stopping RolloutWorker_w28...
+[2023-06-29 13:55:13,378][1321192] Stopping RolloutWorker_w68...
+[2023-06-29 13:55:13,379][1320157] Loop rollout_proc52_evt_loop terminating...
+[2023-06-29 13:55:13,379][1321190] Loop rollout_proc76_evt_loop terminating...
+[2023-06-29 13:55:13,378][1319085] Stopping RolloutWorker_w5...
+[2023-06-29 13:55:13,379][1320928] Loop rollout_proc79_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319153] Stopping RolloutWorker_w15...
+[2023-06-29 13:55:13,378][1320155] Stopping RolloutWorker_w42...
+[2023-06-29 13:55:13,378][1320861] Stopping RolloutWorker_w67...
+[2023-06-29 13:55:13,379][1319086] Stopping RolloutWorker_w3...
+[2023-06-29 13:55:13,379][1319677] Stopping RolloutWorker_w35...
+[2023-06-29 13:55:13,379][1319350] Loop rollout_proc6_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319084] Loop rollout_proc7_evt_loop terminating...
+[2023-06-29 13:55:13,378][1320087] Stopping RolloutWorker_w26...
+[2023-06-29 13:55:13,378][1320860] Stopping RolloutWorker_w60...
+[2023-06-29 13:55:13,378][1320020] Stopping RolloutWorker_w53...
+[2023-06-29 13:55:13,379][1319676] Loop rollout_proc20_evt_loop terminating...
+[2023-06-29 13:55:13,378][1320156] Stopping RolloutWorker_w44...
+[2023-06-29 13:55:13,378][1319155] Stopping RolloutWorker_w2...
+[2023-06-29 13:55:13,379][1320796] Stopping RolloutWorker_w71...
+[2023-06-29 13:55:13,378][1319682] Stopping RolloutWorker_w31...
+[2023-06-29 13:55:13,379][1320077] Loop rollout_proc59_evt_loop terminating...
+[2023-06-29 13:55:13,378][1321061] Stopping RolloutWorker_w56...
+[2023-06-29 13:55:13,379][1319087] Stopping RolloutWorker_w9...
+[2023-06-29 13:55:13,379][1320089] Stopping RolloutWorker_w57...
+[2023-06-29 13:55:13,378][1319083] Stopping RolloutWorker_w1...
+[2023-06-29 13:55:13,378][1321062] Stopping RolloutWorker_w77...
+[2023-06-29 13:55:13,379][1320927] Stopping RolloutWorker_w62...
+[2023-06-29 13:55:13,379][1320795] Stopping RolloutWorker_w69...
+[2023-06-29 13:55:13,379][1319748] Stopping RolloutWorker_w25...
+[2023-06-29 13:55:13,379][1319085] Loop rollout_proc5_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319681] Loop rollout_proc27_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319883] Loop rollout_proc28_evt_loop terminating...
+[2023-06-29 13:55:13,379][1321193] Stopping RolloutWorker_w74...
+[2023-06-29 13:55:13,379][1319954] Loop rollout_proc47_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319153] Loop rollout_proc15_evt_loop terminating...
+[2023-06-29 13:55:13,379][1321192] Loop rollout_proc68_evt_loop terminating...
+[2023-06-29 13:55:13,378][1319889] Stopping RolloutWorker_w49...
+[2023-06-29 13:55:13,379][1319086] Loop rollout_proc3_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319190] Stopping RolloutWorker_w0...
+[2023-06-29 13:55:13,379][1319669] Stopping RolloutWorker_w37...
+[2023-06-29 13:55:13,379][1319677] Loop rollout_proc35_evt_loop terminating...
+[2023-06-29 13:55:13,379][1320155] Loop rollout_proc42_evt_loop terminating...
+[2023-06-29 13:55:13,379][1320087] Loop rollout_proc26_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320796] Loop rollout_proc71_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320860] Loop rollout_proc60_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319682] Loop rollout_proc31_evt_loop terminating...
+[2023-06-29 13:55:13,378][1319890] Stopping RolloutWorker_w43...
+[2023-06-29 13:55:13,379][1320861] Loop rollout_proc67_evt_loop terminating...
+[2023-06-29 13:55:13,380][1321061] Loop rollout_proc56_evt_loop terminating...
+[2023-06-29 13:55:13,379][1320020] Loop rollout_proc53_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319087] Loop rollout_proc9_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319155] Loop rollout_proc2_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320156] Loop rollout_proc44_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320089] Loop rollout_proc57_evt_loop terminating...
+[2023-06-29 13:55:13,379][1321117] Stopping RolloutWorker_w72...
+[2023-06-29 13:55:13,380][1320795] Loop rollout_proc69_evt_loop terminating...
+[2023-06-29 13:55:13,379][1318814] Runner profile tree view:
+main_loop: 384.7026
+[2023-06-29 13:55:13,380][1319748] Loop rollout_proc25_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319885] Stopping RolloutWorker_w45...
+[2023-06-29 13:55:13,379][1319672] Stopping RolloutWorker_w18...
+[2023-06-29 13:55:13,380][1319083] Loop rollout_proc1_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319669] Loop rollout_proc37_evt_loop terminating...
+[2023-06-29 13:55:13,379][1320223] Stopping RolloutWorker_w32...
+[2023-06-29 13:55:13,379][1321060] Stopping RolloutWorker_w70...
+[2023-06-29 13:55:13,380][1319190] Loop rollout_proc0_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319751] Stopping RolloutWorker_w38...
+[2023-06-29 13:55:13,380][1319889] Loop rollout_proc49_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319752] Stopping RolloutWorker_w39...
+[2023-06-29 13:55:13,379][1319678] Stopping RolloutWorker_w29...
+[2023-06-29 13:55:13,380][1319886] Stopping RolloutWorker_w36...
+[2023-06-29 13:55:13,380][1318814] Collected {0: 6623232}, FPS: 17216.5
+[2023-06-29 13:55:13,380][1319890] Loop rollout_proc43_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319154] Stopping RolloutWorker_w17...
+[2023-06-29 13:55:13,380][1319672] Loop rollout_proc18_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319885] Loop rollout_proc45_evt_loop terminating...
+[2023-06-29 13:55:13,380][1321060] Loop rollout_proc70_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320223] Loop rollout_proc32_evt_loop terminating...
+[2023-06-29 13:55:13,379][1320018] Stopping RolloutWorker_w40...
+[2023-06-29 13:55:13,380][1319751] Loop rollout_proc38_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319752] Loop rollout_proc39_evt_loop terminating...
+[2023-06-29 13:55:13,379][1320090] Stopping RolloutWorker_w46...
+[2023-06-29 13:55:13,380][1319886] Loop rollout_proc36_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319680] Stopping RolloutWorker_w14...
+[2023-06-29 13:55:13,381][1319678] Loop rollout_proc29_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320931] Stopping RolloutWorker_w75...
+[2023-06-29 13:55:13,381][1319154] Loop rollout_proc17_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320963] Stopping RolloutWorker_w65...
+[2023-06-29 13:55:13,381][1320088] Stopping RolloutWorker_w50...
+[2023-06-29 13:55:13,381][1320018] Loop rollout_proc40_evt_loop terminating...
+[2023-06-29 13:55:13,381][1320090] Loop rollout_proc46_evt_loop terminating...
+[2023-06-29 13:55:13,381][1319683] Stopping RolloutWorker_w24...
+[2023-06-29 13:55:13,381][1320931] Loop rollout_proc75_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319088] Stopping RolloutWorker_w13...
+[2023-06-29 13:55:13,381][1319157] Stopping RolloutWorker_w8...
+[2023-06-29 13:55:13,381][1319680] Loop rollout_proc14_evt_loop terminating...
+[2023-06-29 13:55:13,381][1320963] Loop rollout_proc65_evt_loop terminating...
+[2023-06-29 13:55:13,381][1320088] Loop rollout_proc50_evt_loop terminating...
+[2023-06-29 13:55:13,380][1320927] Loop rollout_proc62_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319675] Stopping RolloutWorker_w4...
+[2023-06-29 13:55:13,380][1321062] Loop rollout_proc77_evt_loop terminating...
+[2023-06-29 13:55:13,380][1321193] Loop rollout_proc74_evt_loop terminating...
+[2023-06-29 13:55:13,382][1319157] Loop rollout_proc8_evt_loop terminating...
+[2023-06-29 13:55:13,381][1320925] Stopping RolloutWorker_w64...
+[2023-06-29 13:55:13,380][1319747] Stopping RolloutWorker_w12...
+[2023-06-29 13:55:13,379][1319247] Stopping RolloutWorker_w19...
+[2023-06-29 13:55:13,380][1321117] Loop rollout_proc72_evt_loop terminating...
+[2023-06-29 13:55:13,381][1319683] Loop rollout_proc24_evt_loop terminating...
+[2023-06-29 13:55:13,379][1319673] Stopping RolloutWorker_w16...
+[2023-06-29 13:55:13,382][1319675] Loop rollout_proc4_evt_loop terminating...
+[2023-06-29 13:55:13,382][1319088] Loop rollout_proc13_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319418] Stopping RolloutWorker_w23...
+[2023-06-29 13:55:13,382][1320925] Loop rollout_proc64_evt_loop terminating...
+[2023-06-29 13:55:13,380][1319062] Stopping Batcher_0...
+[2023-06-29 13:55:13,382][1319747] Loop rollout_proc12_evt_loop terminating...
+[2023-06-29 13:55:13,381][1319349] Stopping RolloutWorker_w21...
+[2023-06-29 13:55:13,382][1319247] Loop rollout_proc19_evt_loop terminating...
+[2023-06-29 13:55:13,383][1319418] Loop rollout_proc23_evt_loop terminating...
+[2023-06-29 13:55:13,381][1319887] Stopping RolloutWorker_w51...
+[2023-06-29 13:55:13,383][1319062] Loop batcher_evt_loop terminating...
+[2023-06-29 13:55:13,383][1319349] Loop rollout_proc21_evt_loop terminating...
+[2023-06-29 13:55:13,383][1319673] Loop rollout_proc16_evt_loop terminating...
+[2023-06-29 13:55:13,383][1319887] Loop rollout_proc51_evt_loop terminating...
+[2023-06-29 13:55:13,381][1320930] Stopping RolloutWorker_w58...
+[2023-06-29 13:55:13,381][1319667] Stopping RolloutWorker_w10...
+[2023-06-29 13:55:13,384][1320930] Loop rollout_proc58_evt_loop terminating...
+[2023-06-29 13:55:13,384][1319062] Saving debug1/debug/checkpoint_p0/checkpoint_000001617_6623232.pth...
+[2023-06-29 13:55:13,383][1320221] Stopping RolloutWorker_w63...
+[2023-06-29 13:55:13,384][1319667] Loop rollout_proc10_evt_loop terminating...
+[2023-06-29 13:55:13,382][1320113] Stopping RolloutWorker_w61...
+[2023-06-29 13:55:13,379][1319817] Stopping RolloutWorker_w41...
+[2023-06-29 13:55:13,381][1320768] Stopping RolloutWorker_w48...
+[2023-06-29 13:55:13,385][1320221] Loop rollout_proc63_evt_loop terminating...
+[2023-06-29 13:55:13,385][1320113] Loop rollout_proc61_evt_loop terminating...
+[2023-06-29 13:55:13,385][1320768] Loop rollout_proc48_evt_loop terminating...
+[2023-06-29 13:55:13,385][1319817] Loop rollout_proc41_evt_loop terminating...
+[2023-06-29 13:55:13,387][1319089] Stopping RolloutWorker_w11...
+[2023-06-29 13:55:13,389][1319089] Loop rollout_proc11_evt_loop terminating...
+[2023-06-29 13:55:13,388][1320929] Stopping RolloutWorker_w73...
+[2023-06-29 13:55:13,390][1320929] Loop rollout_proc73_evt_loop terminating...
+[2023-06-29 13:55:13,395][1319884] Stopping RolloutWorker_w34...
+[2023-06-29 13:55:13,397][1319884] Loop rollout_proc34_evt_loop terminating...
+[2023-06-29 13:55:13,414][1319671] Stopping RolloutWorker_w33...
+[2023-06-29 13:55:13,443][1319671] Loop rollout_proc33_evt_loop terminating...
+[2023-06-29 13:55:13,476][1319062] Removing debug1/debug/checkpoint_p0/checkpoint_000001551_6352896.pth
+[2023-06-29 13:55:13,486][1319062] Stopping LearnerWorker_p0...
+[2023-06-29 13:55:13,487][1319062] Loop learner_proc0_evt_loop terminating...
+[2023-06-29 13:55:13,589][1319082] Weights refcount: 2 0
+[2023-06-29 13:55:13,593][1319082] Stopping InferenceWorker_p0-w0...
+[2023-06-29 13:55:13,594][1319082] Loop inference_proc0-0_evt_loop terminating...

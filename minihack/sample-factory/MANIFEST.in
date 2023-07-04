@@ -1,0 +1,5 @@
+recursive-include . *.md
+recursive-include . *.cfg
+recursive-include . *.wad
+recursive-include . *.sh
+include LICENSE
