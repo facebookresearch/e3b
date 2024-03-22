@@ -240,12 +240,13 @@ def train(flags):
     full_queue = ctx.Queue()
 
     episode_state_count_dict = dict()
+    global_state_count_dict = dict()
     
     for i in range(flags.num_actors):
         actor = ctx.Process(
             target=act,
             args=(i, free_queue, full_queue, model, elliptical_encoder, buffers, 
-                  episode_state_count_dict, initial_agent_state_buffers, flags))
+                  episode_state_count_dict, global_state_count_dict, initial_agent_state_buffers, flags))
         actor.start()
         actor_processes.append(actor)
 
